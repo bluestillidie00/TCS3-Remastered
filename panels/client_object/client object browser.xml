@@ -178,7 +178,14 @@
                                 </attachment>
 
                                 <!-- coloured actions bar image -->
-                                <widget class="main_box" id="ACTb" appearance="boxes/custom/interface/tab bar/paper" red_replacement="primary"/>
+                                <container>
+                                    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+                                    <container id="ACTb" class="tcs_ui" appearance="tcs/boxes/ui/tab bar/paper" rrep="tcs_bg">
+                                        <layout class="stick_to_sides_attachment" alignment="all" inset="0,5,0,5"/>
+
+                                    </container>
+                                </container>
 
                                 <container>
                                     <layout class="arrange_horizontal_attachment" alignment="right,extend" gap="2" offset="14" />

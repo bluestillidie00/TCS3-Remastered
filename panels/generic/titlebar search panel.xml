@@ -23,7 +23,7 @@
 				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>	
 
 				<!-- title area -->
-				<widget class="text" id="sect" alignment="left, centre_y" size="21" font="TB" multiline="false" auto_size="horizontal" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
+				<widget class="text" id="sect" alignment="left, centre_y" size="21" font="title" multiline="false" auto_size="horizontal" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
 					<layout class="stick_to_sides_attachment" alignment="bottom" inset="0" />
 					<record id="object_property">
 						<list id="get_properties">
@@ -38,7 +38,7 @@
 				<widget class="vertical_subtle_divider" width="2"/>
 
 				<!-- description -->
-				<widget class="text" id="subs" size="9" font="TBs" alignment="left, centre_y, can_scale" multiline="false" dont_give_default_focus="true" colour="secondary">
+				<widget class="text" id="subs" size="9" font="titlesub" alignment="left, centre_y, can_scale" multiline="false" dont_give_default_focus="true" colour="secondary">
 					<layout class="stick_to_sides_attachment" alignment="top" inset="5" />
 					<record id="object_property">
 						<list id="get_properties">
