@@ -1,0 +1,7 @@
+<properties version="1.0">
+	<!-- TCS EDIT -->
+<!-- TITLEBAR -->
+  <colour name="tcs_bg" 																	value="rgb(32,34,36)" />
+  <colour name="tcs_bg_lighter" 													value="rgb(42,44,46)" />
+
+</properties>
