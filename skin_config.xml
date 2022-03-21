@@ -16,7 +16,6 @@
 	<string id="author" value="Sports Interactive" />
 	<string id="description" value="Widget Set for FM2014" />					
 	<string id="version" value="1.0" />
-	<boolean id="base_skin" value="false" />												            <!-- Indicates if a skin is designed solely for others to inherit from. These skins cannot be used directly. -->
 		<flags id="parent" value="fm" />
 
 	<string id="skin_name" value="TCS32" />
