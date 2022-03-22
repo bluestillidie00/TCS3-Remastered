@@ -1,0 +1,179 @@
+<panel>
+	<layout class="vertical_arrange" vertical_layout="200,-1" vertical_gap="8"/>
+
+	<!-- HEADER -->
+	<container >
+		<layout class="horizontal_arrange" horizontal_layout="1300,-1" horizontal_gap="8" />
+
+		<widget class="player_personal_details_panel" id="ppdp" navigation_container="true" height="80">
+			<record id="object_property" get_property="objt" set_property="objt"/>
+		</widget>
+
+		<container class="tcs_box">
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<container class="client_object_viewer_selector_panel" id="csh0" file="player/player overview big selector panel" dont_set_embedded_title="true">
+				<integer id="default_for_unemployed_managers" value="ptri"/>
+				<integer id="default_for_international_managers_other_team" value="ptri"/>
+				<integer id="default_for_everyone_else" value="ptri"/>
+				<integer id="default_for_versus_mode" value="ptri"/>
+			</container>
+		</container>
+	</container>
+
+	<container>
+		<layout class="vertical_arrange" vertical_layout="580,-1" vertical_gap="8"/>
+
+		<container>
+			<layout class="horizontal_arrange" horizontal_layout="420,-1" horizontal_gap="8"  />
+
+			<container >
+				<layout class="vertical_arrange" vertical_layout="-10,-6" vertical_gap="8"/>
+
+				<container class="tcs_box">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container class="client_object_viewer_selector_panel" id="csL1" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
+						<integer id="default_for_unemployed_managers" value="phb1"/>
+						<integer id="default_for_international_managers_other_team" value="phb1"/>
+						<integer id="default_for_everyone_else" value="phb1"/>
+						<integer id="default_for_versus_mode" value="phb1"/>
+					</container>
+				</container>
+
+				<container class="tcs_box">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container class="client_object_viewer_selector_panel" id="csL2" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
+						<integer id="default_for_unemployed_managers" value="phb1"/>
+						<integer id="default_for_international_managers_other_team" value="phb1"/>
+						<integer id="default_for_everyone_else" value="phb1"/>
+						<integer id="default_for_versus_mode" value="phb1"/>
+					</container>
+				</container>
+
+			</container>
+
+			<container >
+				<layout class="horizontal_arrange" horizontal_layout="800,-1" horizontal_gap="8"  />
+
+				<container>
+					<layout class="vertical_arrange" vertical_layout="400,-1" vertical_gap="8"/>
+					<container class="tcs_box">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<container class="client_object_viewer_selector_panel" id="cos1" minimum_width="580" default_width="-2" priority="2">
+							<widget class="player_attributes_panel" id="patt" late_loading="true" dont_allow_custom_attribute_change_ranges="true">
+								<translation id="title" translation_id="229822" type="use" value="Attributes" />
+							</widget>
+
+							<integer id="default_for_unemployed_managers" value="pat1"/>
+							<integer id="default_for_international_managers_other_team" value="pat1"/>
+							<integer id="default_for_everyone_else" value="pat1"/>
+							<integer id="default_for_versus_mode" value="pat1"/>
+						</container>
+					</container>
+
+					<container class="tcs_box">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<container class="client_object_viewer_selector_panel" id="csb3" file="player/player overview small selector panel" minimum_width="310" default_width="-1" priority="3" navigation_container="true" >
+							<integer id="default_for_unemployed_managers" value="Pcrs"/>
+							<integer id="default_for_international_managers_other_team" value="Pcrs"/>
+							<integer id="default_for_everyone_else" value="Pcrs"/>
+							<integer id="default_for_versus_mode" value="Pcrs"/>
+						</container>
+					</container>
+
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_gap="8"/>
+
+					<container class="tcs_box">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<container class="client_object_viewer_selector_panel" id="csL1" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
+							<integer id="default_for_unemployed_managers" value="phb1"/>
+							<integer id="default_for_international_managers_other_team" value="phb1"/>
+							<integer id="default_for_everyone_else" value="phb1"/>
+							<integer id="default_for_versus_mode" value="phb1"/>
+						</container>
+					</container>
+
+					<container class="tcs_box">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<container class="client_object_viewer_selector_panel" id="csL2" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
+							<integer id="default_for_unemployed_managers" value="phb1"/>
+							<integer id="default_for_international_managers_other_team" value="phb1"/>
+							<integer id="default_for_everyone_else" value="phb1"/>
+							<integer id="default_for_versus_mode" value="phb1"/>
+						</container>
+
+					</container>
+				</container>
+
+			</container>
+
+		</container>
+
+
+		<!-- BOTTOM SECTION -->
+		<container draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="16"/>
+
+			<!-- Season stats-->
+			<container width="650" priority="2" default_width="-2"  navigation_container="true" >
+			<!-- <container class="tcs_box" width="650" priority="2" default_width="-2"  navigation_container="true" > -->
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<widget class="player_additional_stats_panel" id="pcsp" file="player/player additional stats small">
+					<record id="object_property">
+						<list id="get_properties">
+							<record id="object_property" get_property="objt" set_property="objt"/>
+							<record id="object_property" get_property="Pila" set_property="hidn"/>
+						</list>
+					</record>
+				</widget>
+
+				<widget class="player_stats_panel" id="pssp" file="player/player stats small">
+					<record id="object_property">
+						<list id="get_properties">
+							<record id="object_property" get_property="Pila" set_property="Shwn"/>
+							<record id="object_property" get_property="objt" set_property="objt"/>
+						</list>
+					</record>
+				</widget>
+			</container>
+
+			<container draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="16"/>
+				
+				<!-- <container class="tcs_box"> -->
+				<container >
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+					
+					<container class="client_object_viewer_selector_panel" id="csb1" file="player/player overview small selector panel" minimum_width="310" default_width="-1" priority="3" navigation_container="true" >
+						<integer id="default_for_unemployed_managers" value="Pcrs"/>
+						<integer id="default_for_international_managers_other_team" value="Pcrs"/>
+						<integer id="default_for_everyone_else" value="Pcrs"/>
+						<integer id="default_for_versus_mode" value="Pcrs"/>
+					</container>
+				</container>
+				
+				<!-- <container class="tcs_box"> -->
+				<container >
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+					<container class="client_object_viewer_selector_panel" id="csb2" file="player/player overview small selector panel" minimum_width="310" default_width="-1" priority="3" navigation_container="true" >
+						<integer id="default_for_unemployed_managers" value="Pcrs"/>
+						<integer id="default_for_international_managers_other_team" value="Pcrs"/>
+						<integer id="default_for_everyone_else" value="Pcrs"/>
+						<integer id="default_for_versus_mode" value="Pcrs"/>
+					</container>
+				
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

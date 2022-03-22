@@ -1,0 +1,188 @@
+<!-- PANEL THAT SHOWS AT THE TOP OF THE PLAYER OVERVIEW -->
+<panel>
+	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+	<boolean id="should_force_refresh" value="true"/>
+
+	<!-- MAIN CONTAINER -->
+	<container class="tcs_box">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" />
+
+		<!-- CONTAINER HOLDING KIT AND PLAER PIC -->
+		<container width="280" >
+			<attachment_group class="horizontal_arrange" horizontal_gap="-125"/>
+
+			<!-- KIT ICON -->
+			<widget id="cKit" class="kit_icon" image_alignment="left" width="250" kit_zoom_level="3" priority="1">
+				<layout class="stick_to_sides_attachment" alignment="left" inset="5" />
+				<record id="object_property" get_property="Pers" set_property="objt"/>
+			</widget>
+
+			<!-- PLAYER FACE -->
+			<widget class="object_portrait_picture" id="face" width="180" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" >
+				<record id="object_property" get_property="objt"/>
+			</widget>
+		</container>
+
+		<!-- LOGOS AND EXTRA DETAILS -->
+		<container width="220" priority="1">
+			<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_gap="-1"/>	
+
+			<!-- COUNTRY NATION BADGES-->
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" />
+
+				<!-- DEFAULT PROPERTIES USED SO WE DON'T HAVE TO DEFINE CERTAIN ATTRIBUTES EVERY TIME -->
+				<record id="default_properties" scale_picture="true" wants_mouse_events="true"/>
+
+				<!-- NATION LOGO -->
+				<widget class="object_portrait_picture" id="npiB" image_alignment="right" >
+					<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+				</widget>
+
+				<!-- CLUB LOGO -->
+				<widget class="object_portrait_picture" id="pclB" image_alignment="left" >
+					<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
+				</widget>
+			</container>
+
+			<!-- DEFAULT PROPERTIES USED SO WE DON'T HAVE TO DEFINE CERTAIN ATTRIBUTES EVERY TIME -->
+			<record id="default_properties" auto_size="vertical" size="small" multiline="false"/>
+
+			<!-- PLAYER EXTRA DETAILS -->
+			<widget class="player_extra_details_text" id="plex" alignment="bottom,centre_x,can_scale" style="semi_bold">
+				<record id="object_property" get_property="PExD" />
+			</widget>
+
+			<!-- INTERNATIONAL APPS -->
+			<widget class="international_appearances_label" id="inta" alignment="top,centre_x,can_scale" >
+				<integer id="int_apps_label_format" value="10" />
+				<record id="object_property" dont_set_hint="true" get_property="Pist" />
+			</widget>
+		</container>
+
+		<container width="200" priority="2">
+			<attachment_group class="vertical_arrange" vertical_alignment="fill" horizontal_inset="4" vertical_inset="0" />
+
+			<!-- AGE + DOB -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="-4" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<!-- AGE LABEL-->
+				<widget class="label" auto_size="vertical" style="semi_bold" colour="secondary" size="10.5">
+					<translation id="text" type="use"  translation_id="227770" value="Age" />          
+				</widget>
+
+				<!-- CONTAINER USED TO SET AGE + DOB HORIZONTALLY -->
+				<container>
+					<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="1" />
+					<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="2" />
+					<!-- AGE -->
+					<widget class="editable_client_object_property_panel" id="age " height="22" auto_size="horizontal" colour="secondary" >
+						<record id="widget_info" class="formatted_label" alignment="left,top"  auto_size="horizontal" size="10.5" >
+							<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+						</record>
+						<record id="widget_edit_info" width="0" height="0"/>
+						<record id="object_property" get_property="Page" />
+					</widget>
+					<!-- DoB 
+					<widget class="editable_client_object_property_panel" id="dobl" auto_size="vertical" colour="secondary" size="small">
+						<record id="widget_info" class="game_formatted_label" alignment="left,centre_y" auto_size="vertical" auto_size_minimum_height="20" format="([%date#1-short])" colour="faded text"/>
+						<record id="widget_properties" height="22"/>
+						<record id="object_property" get_property="Pdob" />
+					</widget>-->
+					<!-- END OF AGE + DOB -->
+				</container>
+			</container>
+
+			<!-- INTERNATIONAL -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+				<widget class="label" auto_size="vertical" style="semi_bold" size="10.5" colour="secondary">
+					<translation id="text" translation_id="230147" type="use" value="Date of Birth" />
+				</widget>
+				<widget class="editable_client_object_property_panel" id="dobl"  alignment="left,top" auto_size="vertical" colour="secondary" size="10.5" format="[%date#1-short]">
+					<record id="widget_info" class="game_formatted_label" auto_size="vertical" />
+					<record id="object_property" get_property="Pdob" />
+				</widget>
+			</container> 
+
+			<!-- PERSONALITY -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="-1" horizontal_alignment="horizontal" horizontal_inset="0" />
+				<widget class="label" id="PPs:" auto_size="vertical" style="semi_bold" colour="secondary" size="10.5">
+					<record id="object_property" get_property="PPst" name="true" />
+				</widget>
+				<widget class="personality_label" id="PPst" auto_size="vertical" size="10.5" colour="secondary">
+					<record id="object_property" get_property="PPst" />
+				</widget>
+			</container>
+
+			<!--  PLAYING TIME -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" auto_size="vertical" style="semi_bold"  colour="secondary" size="10.5">
+					<translation id="text" translation_id="492001" type="use" value="Actual Playing Time[COMMENT: AREA: Playing Time for Players; SUB-AREA: Contract Negotiations; FR-BN: 25975; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: concerns how much playing time a player is being promised]" />
+				</widget>
+				<widget class="playing_time_label" id="PccV" alignment="left,top"  auto_size="vertical" colour="secondary" size="9.5">
+					<record id="object_property" get_property="Pcpt" />
+				</widget>
+			</container>	
+
+
+		</container>
+
+		<container width="180" priority="3">
+			<attachment_group class="vertical_arrange" vertical_alignment="fill" />
+
+			<!-- VALUE -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" id="vall" auto_size="vertical" style="semi_bold"  colour="secondary" size="10.5">
+					<translation id="text" translation_id="227806" type="use" value="Value" />
+				</widget>
+				<widget class="value_label" id="valu" alignment="left" auto_size="vertical" colour="secondary" size="10.5">
+					<record id="object_property" get_property="Pdva" />
+				</widget>
+			</container>
+
+			<!-- WAGE -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+				<widget class="label" id="wglb" auto_size="vertical" style="semi_bold"  colour="secondary" size="10.5">
+					<translation id="text"  type="use"   translation_id="242353" value="Wages" />
+				</widget>
+				<widget class="link_text" id="wgex" section="Pcnr" auto_size="vertical" size="normal" colour="secondary"/>
+			</container>			
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+				<!-- TRANSFER STATUS -->
+				<widget class="label" id="wxyz" auto_size="vertical" style="semi_bold"  colour="secondary" size="10.5">
+					<translation id="text" type="use" translation_id="227852" />
+				</widget> 
+
+				<widget class="training_rating_label_formatted" appearance="boxes/plain/standard/paper" should_recolour="false" alignment="left" size="normal" >
+					<string id="format" value="[%fraction#1-3.2]" />
+					<boolean id="dont_format_numeric_grouping" value="true" />
+					<translation id="hint_if_no_value" translation_id="260962" type="use" value="No matches played yet[COMMENT comp player stats panel: no matches: title]" />
+					<record id="object_property" get_property="Poav"/>
+				</widget>
+			</container>
+
+			<container />
+
+		</container>
+
+		<container class="client_object_viewer_selector_panel" id="tcHs" file="player/player overview header selector panel" save_session_state="true"  default_width="-1" minimum_width="320" priority="1">
+			<integer id="default_for_unemployed_managers" value="thPC"/>
+			<integer id="default_for_international_managers_other_team" value="thPC"/>
+			<integer id="default_for_everyone_else" value="thPC"/>
+			<integer id="default_for_versus_mode" value="thPC"/>
+		</container>  
+
+	</container>
+</panel>

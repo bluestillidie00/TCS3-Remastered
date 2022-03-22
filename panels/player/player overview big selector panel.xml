@@ -1,0 +1,27 @@
+<panel>
+    <container id="SUBP" class="inner_box_no_margin" >
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+    </container>
+
+    <widget class="popup_button" id="popv"  auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true" navigation_focus_target="true">
+        <layout class="stick_to_sides_attachment" alignment="right,top" inset="6"/>
+    </widget>
+
+    <widget class="person_history_biography_panel" id="phb1" file="person/person history biography no title" late_loading="true">
+        <string id="create_if" value="show_person_achievement_history"/>
+        <translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+    </widget>
+    <widget class="player_scout_reports_panel" id="pscR" file="player/player scout report comparison small" late_loading="true">
+        <translation id="title" translation_id="248428" type="use" value="Comparison" />
+    </widget>
+    <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
+        <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+    </widget>
+
+    <!-- POSITIONS -->
+    <widget class="player_positions_indicator_panel" id="ppi1" file="player/tcs/selector/big/position" navigation_container="true" default_focus="true" >
+        <record id="object_property" get_property="objt" set_property="objt"/>
+        <translation id="title" translation_id="333996" type="use" />
+    </widget>
+</panel>
