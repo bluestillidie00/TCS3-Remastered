@@ -19,7 +19,7 @@
 				<!-- Header -->
 				<widget class="link_button" section="Ptac" auto_size="all" navigation_focus_target="false">
 					<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
-					<layout class="stick_to_sides_attachment" alignment="top" inset="10"/>
+					<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
 					<translation id="text" translation_id="230082" type="use" value="Positions"/>
 				</widget>
 
