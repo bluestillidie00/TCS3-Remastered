@@ -11,11 +11,16 @@
 		<container width="280" >
 			<attachment_group class="horizontal_arrange" horizontal_gap="-125"/>
 
-			<!-- KIT ICON -->
-			<widget id="cKit" class="kit_icon" image_alignment="left" width="250" kit_zoom_level="3" priority="1">
-				<layout class="stick_to_sides_attachment" alignment="left" inset="5" />
-				<record id="object_property" get_property="Pers" set_property="objt"/>
-			</widget>
+			<container width="250">
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+				<container class="client_object_viewer_selector_panel" id="tKit" file="player/tcs/selector/kit/selector" save_session_state="true" >
+				<record id="object_property" get_property="objt" set_property="objt"/>
+				</container>
+
+				<!-- KIT ICON -->
+
+			</container>
 
 			<!-- PLAYER FACE -->
 			<widget class="object_portrait_picture" id="face" width="180" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" >
@@ -158,9 +163,10 @@
 				<widget class="link_text" id="wgex" section="Pcnr" auto_size="vertical" size="normal"/>
 			</container>			
 
+			<!-- AVERAGE RATING -->
 			<container>
 				<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-				<!-- AVERAGER ATING -->
+
 				<widget class="label" id="wxyz" auto_size="vertical" style="semi_bold"  size="10.5">
 					<translation id="text" type="use" translation_id="227852" />
 				</widget> 
@@ -173,15 +179,16 @@
 				</widget>
 			</container>
 
+			<!-- TRAINING RATING -->
 			<container>
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
+				<!-- IF PLAYER IS HUMAN CONTROLLED -->
 				<container>
 					<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 					<record id="object_property" get_property="PHcr" set_property="Shwn"/>
 
-					<!-- AVERAGER ATING -->
 					<widget class="label" id="wxyz" auto_size="vertical" style="semi_bold"  size="10.5">
 						<translation id="text" type="use" translation_id="466504" />
 					</widget> 
@@ -191,13 +198,16 @@
 					</widget>
 				</container>
 
+				<!-- IF PLAYER ISN'T HUMAN CONTROLLED WE HIDE ALL CODE -->
 				<container>
 					<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 					<record id="object_property" get_property="PHcr" set_property="hidn"/>
 
 					<container />
+
 				</container>
+
 			</container>
 		</container>
 
