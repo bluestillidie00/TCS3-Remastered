@@ -12,22 +12,22 @@
             <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="10" />
             <layout class="stick_to_sides_attachment" alignment="horizontal" inset="8" apply_to_children="true" />
 
-            <container height="52" navigation_container="true">
+            <container height="140" navigation_container="true" >
                 <attachment_group class="vertical_arrange" vertical_gap="0" />
-                <container class="inner_box_no_margin" height="50">
+                <container class="tcs_box" height="140" rrep="bg" >
                     <layout class="arrange_horizontal_attachment" alignment="left,extend" gap="4" offset="6" />
                     <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
                     <!-- sender picture -->
-                    <container width="85">
+                    <container width="200">
                         <layout class="arrange_horizontal_attachment" alignment="middle,extend" gap="10" />
                         <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-                        <widget class="object_portrait_picture" id="sncl" scale_picture="true" image_alignment="left,centre_y" width="60">
+                        <widget class="object_portrait_picture" id="sncl" scale_picture="true" image_alignment="left,centre_y" width="60" transparency="0.8">
                             <layout class="stick_to_sides_attachment" alignment="all" inset="10" />
                         </widget>
 
-                        <widget class="object_portrait_picture" id="snpc" scale_picture="true" image_alignment="right,centre_y" width="60">
+                        <widget class="object_portrait_picture" id="snpc" scale_picture="true" image_alignment="right,centre_y" width="60" >
                             <layout class="stick_to_sides_attachment" alignment="all" />
                         </widget>
                     </container>
@@ -41,14 +41,14 @@
                             <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
                             <container>
-                                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="-3" />
+                                <layout class="arrange_vertical_attachment" alignment="bottom" offset="0" gap="-3" />
                                 <layout class="centre_in_parent_attachment" alignment="vertical" offset="0" />
                                 <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
                                 <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
                                 <!-- sender -->
                                 <container>
-                                    <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+                                    <layout class="stick_to_sides_attachment" alignment="bottom" inset="0" apply_to_children="true" />
                                     <layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
                                     <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="5" />
 
@@ -68,7 +68,7 @@
                                 </container>
 
                                 <!-- headline -->
-                                <widget class="text" id="nwhd" auto_size="vertical" size="large" alignment="left,top" colour="inbox_text" style="bold" multiline="false" />
+                                <widget class="text" id="nwhd" auto_size="vertical" size="24" alignment="left,top" colour="inbox_text" style="bold" multiline="false" />
                             </container>
                         </container>
 
@@ -106,7 +106,7 @@
                     </container>
                 </container>
 
-                <widget class="horizontal_divider" red_replacement="inbox_text" height="1" />
+                <widget class="horizontal_divider" red_replacement="inbox_text" height="2" />
             </container>
 
             <!-- the news item content -->
@@ -128,7 +128,7 @@
             </container>
 
             <!--  response button containers -->
-            <container id="ResC" class="inner_contrast_box_no_margin" red_replacement="card bg darker" hidden="true">
+            <container id="ResC" hidden="true">
                 <attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="4">
                     <global id="horizontal_gap" name="ui.button_row_gap" />
                 </attachment_group>
