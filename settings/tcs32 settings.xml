@@ -1,7 +1,14 @@
 <properties version="1.0">
 	<!-- TCS EDIT -->
-<!-- TITLEBAR -->
-  <colour name="tcs_bg" 																	value="rgb(32,34,36)" />
-  <colour name="tcs_bg_lighter" 													value="rgb(42,44,46)" />
+
+	<!-- TITLEBAR -->
+	<colour name="tcs_bg" 																	value="rgb(32,34,36)" />
+	<colour name="tcs_bg_lighter" 													value="rgb(42,44,46)" />	
+	<colour name="tcs_accent" 													value="rgb(55,175,247)" />	
+
+	<!-- ACCENT COLOURS -->  
+	<colour name="fg accent" 													value="tcs_accent" />
+	<colour name="bg accent" 													value="tcs_accent" />
+	<colour name="title" 													value="tcs_accent" />
 
 </properties>
