@@ -14,7 +14,7 @@
 
 		<!-- Linked header -->
 		<widget class="link_button" section="Pfrm" auto_size="all">
-			<translation id="title" value="Pros/Cons" type="use"/>
+			<translation id="text" value="Pros/Cons" type="use"/>
 		</widget>
 	</container>
 

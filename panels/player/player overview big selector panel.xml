@@ -18,29 +18,32 @@
         <string id="create_if" value="show_person_achievement_history"/>
         <translation id="title" translation_id="295868" type="use"/>
     </widget>
-        
-	<!-- CAREER STATS -->
-	<widget class="playing_history_summary_panel" id="tsCS"  late_loading="true">
-		<translation id="title" translation_id="247605" type="use" />
-	</widget>
-    
+
+    <!-- CAREER STATS -->
+    <widget class="playing_history_summary_panel" id="tsCS"  late_loading="true">
+        <translation id="title" translation_id="247605" type="use" />
+    </widget>
+
     <!-- COMPARISON -->
     <widget class="player_scout_reports_panel" id="pscR" file="player/tcs/selector/big/comparison" late_loading="true">
         <translation id="title" translation_id="420686" type="use" />
     </widget> 
-        
+
     <!-- ELIGBILITY -->
     <widget class="person_information_panel" id="pEli" late_loading="true" file="player/tcs/selector/big/eligibility">
         <translation id="title" translation_id="260816" type="use" />
     </widget> 
 
+    <!-- PLAYER GAMES IN POSITION -->
+    <widget class="player_games_in_position_panel" id="pgpp" file="player/tcs/selector/games in pos">
+        <translation id="title" translation_id="257322" type="use"/>
+    </widget>
+
     <!-- LAST 5 GAMES -->
     <widget class="player_additional_stats_panel" file="none" id="la5g">
         <record id="object_property" get_property="objt" set_property="objt" />
         <translation id="title" translation_id="395236" type="use" />
-
         <layout class="stick_to_sides_attachment" apply_to_children="true"/>		
-
         <widget class="player_form_summary_panel" file="player/tcs/selector/last 5 games" >
             <record id="object_property" get_property="objt" set_property="objt" />
         </widget>	
@@ -58,15 +61,26 @@
         </widget>	
     </widget>
 
+    <!-- MILESTONES -->
+    <widget class="player_history_achievements_panel" file="player/tcs/selector/big/milestones" id="tsAc"  late_loading="true">
+        <translation id="title" translation_id="435775" type="use" />
+    </widget>
+
+    <!-- PAST INJURIES -->
+    <widget class="player_history_injury_panel" id="tphi"  late_loading="true" file="player/tcs/selector/past injury" >
+        <translation id="title" translation_id="316626" type="use" />
+    </widget> 
+
     <!-- PERSONAL DETAILS -->
     <widget class="player_personal_details_panel" id="pInF" file="player/tcs/selector/big/header info card" late_loading="true">
         <translation id="title" translation_id="333981" type="use" />
     </widget> 
-    
+
     <!-- PROS AND CONS -->
     <widget class="player_scout_reports_panel" id="PrCo" file="player/tcs/selector/big/pros cons" late_loading="true">
-			<translation id="text" value="Pros/Cons" type="use"/>
+        <translation id="title" value="Pros/Cons" type="use"/>
     </widget> 
+
     <!-- REPORTS 
     DISABLED FROM SELECTOR DUE TO SIZING ISSUES. MADE EXCLUSIVE FOR LARGEST SELECTOR IN PLAYER OVERVIEW
     <widget file="player/tcs/selector/big/reports" class="client_object_viewer_xml_panel" id="tCSR" late_loading="true">
@@ -74,7 +88,7 @@
     </widget>   -->
 
     <!-- POSITIONS -->
-    <widget class="player_positions_indicator_panel" id="ppi1" file="player/tcs/selector/big/position" navigation_container="true" default_focus="true" >
+    <widget class="player_positions_indicator_panel" id="Ppos" file="player/tcs/selector/big/position" navigation_container="true" default_focus="true" >
         <record id="object_property" get_property="objt" set_property="objt"/>
         <translation id="title" translation_id="333996" type="use" />
     </widget>

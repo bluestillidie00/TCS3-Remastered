@@ -24,6 +24,16 @@
         <translation id="title" translation_id="420686" type="use" />
     </widget> 
 	
+	    <!-- PLAYER GAMES IN POSITION -->
+    <widget class="player_games_in_position_panel" id="pgpp" file="player/tcs/selector/games in pos">
+        <translation id="title" translation_id="257322" type="use"/>
+    </widget>
+	
+	  	<!-- PAST INJURIES -->
+	<widget class="player_history_injury_panel" id="tphi"  late_loading="true" file="player/tcs/selector/past injury" >
+		<translation id="title" translation_id="316626" type="use" />
+	</widget> 
+	
 	<widget class="player_physical_stats_panel" id="ppsp" late_loading="true">
 		<translation id="title" translation_id="247571" type="use" value="Fitness" />
 	</widget>
