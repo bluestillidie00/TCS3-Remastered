@@ -160,7 +160,7 @@
 
 			<container>
 				<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
-				<!-- TRANSFER STATUS -->
+				<!-- AVERAGER ATING -->
 				<widget class="label" id="wxyz" auto_size="vertical" style="semi_bold"  size="10.5">
 					<translation id="text" type="use" translation_id="227852" />
 				</widget> 
@@ -173,8 +173,32 @@
 				</widget>
 			</container>
 
-			<container />
+			<container>
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<record id="object_property" get_property="PHcr" set_property="Shwn"/>
+
+					<!-- AVERAGER ATING -->
+					<widget class="label" id="wxyz" auto_size="vertical" style="semi_bold"  size="10.5">
+						<translation id="text" type="use" translation_id="466504" />
+					</widget> 
+
+					<widget class="property_list_viewer_xml_panel" file="widgets/training rating with change icon" should_colour="true" id="plci" navigation_focus_target="false" auto_size="all">
+						<record id="object_property" get_property="PtWC" set_property="valu" />
+					</widget>
+				</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="-1" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+					<record id="object_property" get_property="PHcr" set_property="hidn"/>
+
+					<container />
+				</container>
+			</container>
 		</container>
 
 		<container class="client_object_viewer_selector_panel" id="tcHs" file="player/player overview header selector panel" save_session_state="true"  default_width="-1" minimum_width="320" priority="1">
