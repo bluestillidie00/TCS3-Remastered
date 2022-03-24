@@ -1,9 +1,4 @@
 <record>
-  
-  <!-- preload the stuff in this folder -->
-	<boolean id="preload" value="false"/>
-  
-  <!-- cache the xml files in this folder -->
-  <boolean id="cache" value="false"/>
-  
+    <boolean id="preload" value="false"/>
+    <boolean id="cache" value="false"/>  
 </record>
