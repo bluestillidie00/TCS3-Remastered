@@ -1,0 +1,17 @@
+<panel>
+  <layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" gap="1"/>
+  <layout class="fit_children_attachment" alignment="vertical, fill" offset="0" gap="1"/>
+  <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+  <!-- retweeted by label -->
+  <container id="rtbx" height="16">
+    <layout class="arrange_horizontal_attachment" layout="16, -1" gap="2"/>
+    <layout class="stick_to_sides_attachment" alignment="top, horizontal" apply_to_children="true" inset="0"/>
+
+    <widget class="picture" file="icons/custom/feed/rt" height="16" width="16" scale_picture="false" alignment="centre"/>
+    <widget class="label" id="rttx" size="small" colour="twitter_base_font" multiline="true" auto_size="all" alignment="left, centre_y"/>
+  </container>
+
+    <container class="bordered_box" file="human/news feed social item content panel" appearance="evo/social feed/paper3"/>
+
+</panel>
