@@ -11,4 +11,8 @@
 	<colour name="bg accent" 													value="tcs_accent" />
 	<colour name="title" 													value="tcs_accent" />
 
+	<!-- TWITTER -->
+	<colour name="twitter" value="rgb(23,160,238)"/>
+	<colour name="twitter_base_font" value="rgb(101,119,134)"/>
+
 </properties>
