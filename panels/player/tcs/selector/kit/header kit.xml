@@ -1,0 +1,46 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="-2" apply_to_children="true"/>
+
+	<!-- <widget class="kit_icon" kit_path="default" file="generic/small" id="kit1" scale_picture="true" keep_aspect_ratio="true" height="160" width="300" image_alignment="left" kit_zoom_level="1" >
+		<layout class="centre_in_parent_attachment" alignment="horizontal" offset="70" priority="1"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="15" priority="1"/>
+
+		<record id="object_property">
+			<list id="get_properties">
+				<record>
+					<integer id="get_property" value="Pers" />
+					<integer id="set_property" value="Pers" />
+				</record>
+				<record>
+					<integer id="get_property" value="Pctx" />
+					<integer id="set_property" value="Pcte" />
+				</record>
+			</list>
+		</record>
+	</widget> -->
+	
+	
+	<widget class="club_overview_kits_panel" file="none" id="it2k" save_session_state="true">
+		<record id="object_property" get_property="Pclb" set_property="objt"/>
+		<layout class="arrange_vertical_attachment" alignment="middle,extend" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+		<!-- We are using a spacer here so we can limit our images size, but still remain centered in our parent -->
+		<widget class="spacer" height="1" />
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="0" vertical_inset="2" />
+
+			<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x" always_use_latest_object_list="true">
+				<record id="object_property">
+					<integer id="get_property" value="Tidx" />
+					<integer id="set_property" value="indx" />
+				</record>
+			</record>
+
+			<widget class="kit_picture" id="T_hk" kit_id="0" />
+		</container>
+
+
+	</widget>
+</panel>
