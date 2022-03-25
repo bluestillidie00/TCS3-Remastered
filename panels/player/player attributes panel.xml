@@ -1,5 +1,5 @@
-<panel draw_vertical_dividers="true">
-	<attachment_group class="horizontal_arrange" horizontal_layout="-14,-4 " horizontal_gap="16" />
+<panel >
+	<attachment_group class="horizontal_arrange" horizontal_layout="-14,-4 " horizontal_gap="4" />
 
 	<flags id="required_attribute_row_appearance" value="tables/custom/attributes/required/row"/>
 	<flags id="preferred_attribute_row_appearance" value="tables/custom/attributes/preferred/row"/>
@@ -27,7 +27,7 @@
 		</list>
 	</record>
 
-	<container>
+	<container class="tcs_box">
 		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="1" vertical_inset="0"/>
 
 		<!-- Technical Table -->

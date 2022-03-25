@@ -1,5 +1,7 @@
 <!-- Panel displaying extra attributes a bout a player, for example condition, footedness etc --><!-- Meant to be used with a CLIENT_OBJECT_XML_PANEL -->
 <panel>
+<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+<container class="tcs_box">
 	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="4" gap="8" />
 	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
@@ -145,5 +147,6 @@
 
 		</container>
 
+	</container>
 	</container>
 </panel>
