@@ -14,12 +14,10 @@
 			<container width="250">
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
-				<container class="client_object_viewer_selector_panel" id="tKit" file="player/tcs/selector/kit/selector" save_session_state="true" >
-				<record id="object_property" get_property="objt" set_property="objt"/>
-				</container>
-
 				<!-- KIT ICON -->
-
+				<container class="client_object_viewer_selector_panel" id="tKit" file="player/tcs/selector/kit/selector" save_session_state="true" >
+					<record id="object_property" get_property="objt" set_property="objt"/>
+				</container>
 			</container>
 
 			<!-- PLAYER FACE -->
