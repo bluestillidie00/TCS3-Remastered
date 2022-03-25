@@ -1,4 +1,4 @@
-<class class="tcs_tabs" parent="multi_box" contents_kind="plain_box" top_kind="tab_strip" appearance="" dont_set_title_text="true">
+<class class="tcs_tabs" parent="multi_box" contents_kind="plain_box" top_kind="tab_strip" appearance="tcs/boxes/main/tabbed/paper" dont_set_title_text="true">
 
 	<flags id="top_layout" value="horizontal"/>
 
