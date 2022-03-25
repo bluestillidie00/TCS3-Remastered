@@ -1,13 +1,13 @@
-<panel should_force_refresh="true">
+<panel should_force_refresh="true" draw_horizontal_dividers="true">
 	<layout class="vertical_arrange" vertical_layout="-10,-6" />
 
-	<container>
+	<container draw_horizontal_dividers="true">
 		<attachment_group class="vertical_arrange" vertical_alignment="fill" />
 
-		<container>
+		<container draw_vertical_dividers="true">
 			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" />
 
-			<container class="tcs_box" id="at82" >
+			<container class="main_box" id="at82" >
 				<translation id="title" translation_id="289355" type="use" value="Icons[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
 				<container class="legend_list_table" id="Csvp">
@@ -20,7 +20,7 @@
 				</container>
 			</container>
 
-			<container class="tcs_box" id="at82" >
+			<container class="main_box" id="at82" >
 				<translation id="title" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
 				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
 				<container class="legend_list_table" id="TLeg">
@@ -34,7 +34,7 @@
 			</container>
 		</container>
 
-		<container class="tcs_box" id="at82" >
+		<container class="main_box" id="at82" >
 			<translation id="title" translation_id="247454" type="use" value="Favoured Personnel" />
 			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
 			<container class="legend_list_table" id="Cfap">
@@ -48,7 +48,7 @@
 		</container>
 	</container>		
 
-	<container class="tcs_box">
+	<container class="main_box">
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>	
 		<!--snapshot selector 2-->
 		<container class="client_object_viewer_selector_panel" id="cos2" minimum_height="300" priority="3" default_height="-3">
