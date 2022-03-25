@@ -3,15 +3,15 @@
 		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="8" />
 		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
 	</container>
-
-	<widget class="popup_button" id="popv" auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true">
+<!-- 
+	<widget class="popup_button" id="popv" auto_size="horizontal" height="20" click_event="msis" appearance="" fixed="true">
 		<layout class="stick_to_sides_attachment" alignment="left,top" inset="12,8" />
-	</widget>
+	</widget> -->
 
 	<widget id="bak1" class="kit_icon" image_alignment="left" width="250" kit_zoom_level="3" priority="1" late_loading="true">
 		<record id="object_property" get_property="Pers" set_property="objt"/>
 		<translation id="title" value="Back of Kit 1" type="use" />
-	</widget>
+	</widget><!-- 
 
 	<container class="client_object_viewer_xml_panel" file="player/tcs/selector/kit/header kit" late_loading="true" id="fro1">
 		<translation id="title" value="Front of Kit" type="use" />
@@ -21,5 +21,5 @@
 	<container class="client_object_viewer_xml_panel" file="player/tcs/selector/kit/header kit zoomed" late_loading="true" id="fro2">
 		<translation id="title" value="Front of Kit Zoomed" type="use" />
 		<record id="object_property" get_property="objt" set_property="objt"/>
-	</container>
+	</container> -->
 </panel>
