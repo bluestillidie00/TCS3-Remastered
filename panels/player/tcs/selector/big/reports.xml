@@ -2,8 +2,8 @@
 <panel>
 	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
-<!-- SET UP TABS -->
-<!-- TOM TODO: ADD FAINT GRAPHIC -->
+	<!-- SET UP TABS -->
+	<!-- TOM TODO: ADD FAINT GRAPHIC -->
 	<container class="tcs_tabs" id="tran" default_item="rep1" save_default_state="true" save_session_state="true" >
 
 		<!-- OVERALL -->	
@@ -18,7 +18,7 @@
 				<!-- IF USER CONTROLLED -->
 				<container >
 					<layout class="vertical_arrange" vertical_layout="150,-1" />
-					
+
 					<!-- IF HUMAN CONTROLLED TEAM, SHOW -->
 					<record id="object_property" get_property="PHcr" set_property="Shwn"/>
 
@@ -335,7 +335,7 @@
 						</widget>
 					</container>
 				</widget>
-		</container>
+			</container>
 
 			<container>
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
