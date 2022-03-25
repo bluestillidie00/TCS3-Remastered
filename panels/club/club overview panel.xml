@@ -179,9 +179,11 @@
 						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
 							<translation id="text" translation_id="308084" type="use" />
 						</widget>
-						<widget class="youth_recruitment_status_label" alignment="left" auto_size="vertical" size="10.5">
-							<record id="object_property" get_property="Crcs" />
+
+						<widget class="youth_facilities_stars_label" auto_size="vertical" size="10.5" alignment="left">
+							<record id="object_property" get_property="Crcb"/>
 						</widget>
+
 					</container>
 				</container>			
 
@@ -223,6 +225,10 @@
 						<widget class="club_finances_description_text" auto_size="vertical" size="10.5">
 							<record id="object_property" get_property="CfiD" />
 						</widget>
+						<widget class="youth_recruitment_status_label" size="9999"  auto_size="vertical" font="title">
+							<record id="object_property" get_property="Crcs"/>
+						</widget>
+
 					</container>
 
 					<!-- OWNER STATUS -->
