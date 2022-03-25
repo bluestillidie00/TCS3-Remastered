@@ -1,0 +1,71 @@
+<panel should_force_refresh="true">
+	<layout class="vertical_arrange" vertical_layout="-10,-6" />
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="fill" />
+
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" />
+
+			<container class="tcs_box" id="at82" >
+				<translation id="title" translation_id="289355" type="use" value="Icons[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+				<container class="legend_list_table" id="Csvp">
+					<record id="object_property">
+						<string id="get_property" value="Csvp" />
+					</record>
+					<list id="column_widget_properties">
+						<record indx="0"  navigation_focus_target="false"/>
+					</list>
+				</container>
+			</container>
+
+			<container class="tcs_box" id="at82" >
+				<translation id="title" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+				<container class="legend_list_table" id="TLeg">
+					<record id="object_property">
+						<string id="get_property" value="TLeg" />
+					</record>
+					<list id="column_widget_properties">
+						<record indx="0"  navigation_focus_target="false"/>
+					</list>
+				</container>
+			</container>
+		</container>
+
+		<container class="tcs_box" id="at82" >
+			<translation id="title" translation_id="247454" type="use" value="Favoured Personnel" />
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+			<container class="legend_list_table" id="Cfap">
+				<record id="object_property">
+					<string id="get_property" value="Cfap" />
+				</record>
+				<list id="column_widget_properties">
+					<record indx="0"  navigation_focus_target="false"/>
+				</list>
+			</container>
+		</container>
+	</container>		
+
+	<container class="tcs_box">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>	
+		<!--snapshot selector 2-->
+		<container class="client_object_viewer_selector_panel" id="cos2" minimum_height="300" priority="3" default_height="-3">
+
+			<widget class="club_league_history_graph" id="clhg" file="club/club league history graph no buttons" section="cmps" default_item="true" >
+				<translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]" />
+			</widget>
+			<widget class="team_container_information_background_panel" id="Cbac">
+				<translation id="title" translation_id="333728" type="use" value="Club Background[COMMENT: title for panel showing a club's background]" />
+			</widget>
+			<widget class="team_container_records_overview_panel" id="retg" file="club/tcs/tcs22v2/records">
+				<translation id="title" translation_id="243323" type="use" value="Records" />
+			</widget>
+			<widget class="team_container_honours_panel" id="hons"  default_item="true" >
+				<translation id="title" translation_id="445076" type="use" />
+			</widget>
+		</container>
+	</container>		
+
+</panel>
