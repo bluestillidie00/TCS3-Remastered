@@ -146,7 +146,7 @@
 				<widget class="label" id="vall" auto_size="vertical" style="semi_bold"  size="10.5">
 					<translation id="text" translation_id="227806" type="use" value="Value" />
 				</widget>
-				<widget class="value_label" id="valu" alignment="left" auto_size="vertical" size="10.5">
+				<widget class="transfer_value_label" id="TrVa" auto_size="all" alignment="left, centre_y" size="10.5">
 					<record id="object_property" get_property="Pdva" />
 				</widget>
 			</container>
