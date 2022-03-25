@@ -1,0 +1,61 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/> 
+
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+		
+				
+		<container >
+			<layout class="stick_to_sides_attachment" alignment="bottom" inset="22" apply_to_children="true"/>
+			<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="2"/>
+			
+				<widget class="match_rating_label_formatted" id="avra" size="8" auto_size="horizontal" alignment="centre,can_scale" format="[%fraction#1-2.1]" />
+
+		</container>
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="10" apply_to_children="true"/>
+			<!-- PLAYER PICTURE -->
+			<widget class="object_portrait_picture" id="pict" scale_picture="true" >
+				<layout class="stick_to_sides_attachment" alignment="bottom,left" inset="0,20" />
+				<record id="object_property">
+					<integer id="get_property" value="objt"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+		</container>
+
+		<!-- ICONS (INJURY, STAR PLAYER ETC) -->
+		<container id="icoC" height="32" width="32" >
+			<layout class="stick_to_sides_attachment" alignment="top" inset="5" apply_to_children="true"/>
+			<layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="2"/>
+			<layout class="stick_to_sides_attachment" alignment="right" inset="4"/>
+
+			<record id="default_properties" image_alignment="centre" hidden="true" width="32" height="32" />
+
+			<widget class="picture" id="PTgs" file="icons/16px/goal" />
+			<widget class="picture" id="PTas" file="icons/16px/assist"/>
+			<widget class="picture" id="PTrt" file="icons/16px/key player" />
+			<widget class="picture" id="PNba" file="icons/16px/yellow card" />
+			<widget class="picture" id="PHNO" file="icons/16px/debut" red_replacement="white" />
+		</container>
+
+	</container>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<container />
+
+		<!-- Name -->
+		<container class="bordered_box"  appearance="boxes/custom/solid/rounded/paper" red_replacement="bg" height="22">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="label" id="name" size="8" alignment="centre,can_scale"  auto_size="vertical" font="player icon" >
+					<layout class="stick_to_sides_attachment" alignment="top" inset="4" /> 			
+				</widget>
+
+		</container>
+	</container>
+</panel>

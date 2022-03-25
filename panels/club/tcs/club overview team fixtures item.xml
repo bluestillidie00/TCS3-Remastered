@@ -1,0 +1,50 @@
+﻿<panel>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+    <container class="tcs_box" >
+        <layout class="vertical_arrange" vertical_alignment="middle"/>
+
+        <container>
+            <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+            <attachment class="test_screen_size_attachment" skip_if_false="true">
+                <list id="properties">
+                    <record>
+                        <flags id="alignment" value="vertical"/>
+                        <integer id="min_value" value="0" />
+                        <integer id="max_value" value="868"/>
+                        <symbol id="set_property" value="height" />
+                        <integer id="true_value" value="30" />
+                    </record>
+                    <record min_value="868" max_value="1260" true_value="50"/>
+                    <record min_value="1260" max_value="9999" true_value="85"/>
+                </list>
+            </attachment>
+
+            <widget class="fixture_opponent_picture" id="fopP" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                <record id="object_property" get_property="fopP"/>
+            </widget>
+
+            <widget class="fixture_opponent_team_button" icon_enabled="false" label_disabled="false" show_button_appearance="false" size="9999" font="capitals" colour="text">
+                <record id="object_property" dont_set_hint="true">
+                    <integer id="get_property" value="fopt" />
+                    <integer id="set_property" value="valu" />
+                </record>
+            </widget>
+
+        </container>
+
+        <container>
+            <attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_gap="0"/>
+
+            <widget class="fixture_opponent_venue_text" spec="text" size="small" alignment="centre" auto_size="vertical">
+                <record id="object_property" get_property="fOpV" />
+            </widget>
+
+            <widget class="text" id="time" spec="text" style="bold" alignment="centre" multiline="true" auto_size="vertical"/>
+
+        </container>
+
+    </container>
+
+</panel>

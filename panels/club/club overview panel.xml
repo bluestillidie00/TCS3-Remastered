@@ -1,0 +1,638 @@
+<panel>
+	<layout class="vertical_arrange" vertical_layout="200,-1" vertical_gap="8"/>
+
+	<!-- HEADER -->
+	<container >
+		<layout class="horizontal_arrange" horizontal_layout="1300,-1" horizontal_gap="8" />
+
+		<container class="tcs_box">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="16" />
+
+			<!-- CONTAINER HOLDING KIT AND PLAER PIC -->
+			<container width="300" >
+				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="-60" />
+
+				<!-- CLUB LOGO -->
+				<widget class="object_portrait_picture" id="lepi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+					<record id="object_property" get_property="Cdiv"/>
+				</widget>
+
+				<!-- COMP LOGO -->
+				<widget class="picture" id="pict" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+					<record id="object_property" get_property="mnpc"/>
+				</widget>
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" />
+
+				<!-- FIRST BATCH -->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="fill"/>
+
+					<!-- CLUB COMP -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="292797" type="use" />
+						</widget>
+						<widget class="comp_button" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Cdiv" />
+						</widget>
+					</container>
+
+					<!-- NATION -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="292796" type="use" />
+						</widget>
+						<widget class="nation_button" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Cnat" />
+						</widget>
+					</container>
+
+					<!-- RECENT FORM -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize" vertical_gap="-4" />
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="344664" type="use" />
+						</widget>
+						<widget class="team_recent_form_widget" alignment="left,top">
+							<record id="object_property" get_property="Tfrm" />
+						</widget>
+					</container>
+
+					<!-- LEAGUE POSITION -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="242479" type="use" />
+						</widget>
+						<widget class="division_position_button" alignment="left" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Cmai" />
+						</widget>
+					</container>
+				</container>
+
+				<!-- 2ND  -->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="fill" />
+
+					<!-- CLUB COMP -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="319583" type="use" />
+						</widget>
+						<widget class="club_squad_character_label" alignment="left" icon_enabled="false" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Csca" />
+						</widget>
+					</container>
+
+					<!-- PROFESSIONAL STATUS -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="319581" type="use" />
+						</widget>
+						<widget class="professional_status_label" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Cprs" />
+						</widget>
+					</container>
+
+					<!-- CONTINENTAL COMPETITION -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="319580" type="use" />
+						</widget>
+						<widget class="comp_button" alignment="left,centre_y" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Ccon" />
+						</widget>
+					</container>
+
+					<!-- MEDIA PREDICTION -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="243509" type="use" />
+						</widget>
+						<widget class="media_expectation_text" alignment="left" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="CmeD" />
+						</widget>
+					</container>
+				</container>
+
+				<!-- 3RD  -->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="fill" />
+
+					<!-- CLUB REPUTATION -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="227963" type="use" />
+						</widget>
+						<widget class="club_reputation_stars_label" alignment="left" icon_enabled="false" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Csta" />
+						</widget>
+					</container>
+
+					<!-- TRAINING FACILITIES -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="229395" type="use" />
+						</widget>
+						<widget class="training_facilities_stars_label" auto_size="vertical" size="10.5" alignment="left">
+							<record id="object_property" get_property="Ctf*" />
+						</widget>
+					</container>
+
+					<!-- YOUTH FACILITIES -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="255008" type="use" />
+						</widget>
+						<widget class="youth_facilities_stars_label" auto_size="vertical" size="10.5" alignment="left">
+							<record id="object_property" get_property="Cfc*" />
+						</widget>
+					</container>						
+
+					<!-- YOUTH RECRUITMENT -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="308084" type="use" />
+						</widget>
+						<widget class="youth_recruitment_status_label" alignment="left" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Crcs" />
+						</widget>
+					</container>
+				</container>			
+
+				<!-- 4TH FINANCES -->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="fill" />
+
+					<!-- BANK BALANCE -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="255029" type="use" />
+						</widget>
+						<widget class="cash_cell" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="Ccba" />
+						</widget>
+					</container>
+
+					<!-- ESTIMATED VALUE -->
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="251300" type="use" />
+						</widget>
+						<widget class="club_value_description_text" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="CovD" />
+						</widget>
+					</container>
+
+					<!-- FINANCE STATUS -->					
+					<container>
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="229821" type="use" />
+						</widget>
+						<widget class="club_finances_description_text" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="CfiD" />
+						</widget>
+					</container>
+
+					<!-- OWNER STATUS -->
+					<container>		
+						<attachment_group class="vertical_arrange_autosize"/>
+
+						<widget class="label" auto_size="vertical" style="semi_bold"  size="10.5">
+							<translation id="text" translation_id="394525" type="use" />
+						</widget>
+						<widget class="chairman_status_text" alignment="left,can_scale" auto_size="vertical" size="10.5">
+							<record id="object_property" get_property="CStT" />
+						</widget>
+					</container>
+				</container>
+			</container>
+
+		</container>
+
+		<!-- KITS -->
+		<container class="tcs_box">
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			<translation id="title" translation_id="" type="use" value="Kits[COMMENT: title for the club kits the club overview panel]" />
+
+			<widget class="club_overview_kits_panel" id="cloK" file="none">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" />
+
+				<container height="18">
+					<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+					<string id="skin_style" value="title link" />
+
+					<!-- Linked header -->
+					<widget class="text" auto_size="all" font="title">
+						<translation id="text" translation_id="319448" type="use"/>
+					</widget>
+
+					<widget class="spacer" height="3" />
+				</container>
+
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
+
+					<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+						<record id="object_property">
+							<integer id="get_property" value="Tidx" />
+							<integer id="set_property" value="indx" />
+						</record>
+					</record>
+
+					<widget class="kit_picture" id="T_hk" kit_id="0" />
+					<widget class="kit_picture" id="T_ak" kit_id="1" />
+					<widget class="kit_picture" id="T_tk" kit_id="2" />
+				</container>
+			</widget>
+		</container>
+	</container>
+
+	<!-- NEXT BIT -->
+	<container>
+		<!-- <layout class="vertical_arrange" vertical_layout="580,-1" vertical_gap="8"/> -->
+		<layout class="vertical_arrange" vertical_layout="-1" vertical_gap="8"/>
+
+		<!-- TOP HALF -->
+		<container>
+			<layout class="horizontal_arrange" horizontal_layout="560,-1" horizontal_gap="8"  />
+
+			<!-- LEFT -->
+			<container >
+				<layout class="vertical_arrange" vertical_layout="-3,-6" vertical_gap="4" />
+
+				<!-- RESULTS AND FIXTURES -->
+				<container class="vertical_arrange_container" alignment="fill" gap="4">
+
+					<container class="club_overview_team_results_panel" file="club/tcs/club overview team calendar results">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</container>
+
+					<container class="club_overview_team_results_panel" file="club/tcs/club overview team calendar fixtures">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</container>
+				</container>
+
+				<!-- LEAGUE TABLE -->
+				<container class="tcs_box">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+					<container>
+						<layout class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0"/>
+
+						<widget class="table" layout="-4, -1" row_spacing="2" mode="none" auto_size="vertical" fixed_size_rows="false" auto_size_rows="true">
+
+							<!-- Recent Form -->
+							<container class="club_overview_details_panel" file="none" row="0" col="1">
+								<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0,0,0,8"/>
+
+								<record id="object_property" get_property="Tftm" set_property="objt"/>
+
+								<widget class="team_recent_form_widget" alignment="right">
+									<record id="object_property" get_property="Tfrm" set_property="valu"/>
+								</widget>
+							</container>
+
+							<!-- Past positions -->
+							<widget class="label" auto_size="vertical" size="small" row="0" col="0">
+								<translation id="text" translation_id="232109" type="use" value="League Positions" />
+							</widget>
+
+							<!-- League Table -->
+							<container class="league_positions_panel" id="lpos" file="team/team competitions overview past positions panel" row="1" col="0" column_span="2" height="40">
+								<record id="object_property">
+									<list id="get_properties">
+										<!-- PROP_TEAM_CURRENT_DIVISION -->
+										<record get_property="Cddl" set_property="objt"/>
+										<record get_property="Tftm" set_property="team"/>
+									</list>
+								</record>
+							</container>
+						</widget>
+
+						<container class="competition_news_panel" file="none">
+							<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+
+							<record id="object_property" get_property="objt" set_property="objt"/>
+
+							<container class="competition_overview_panel" file="none">
+								<layout class="stick_to_sides_attachment" alignment="all"/>
+
+								<record id="object_property" get_property="Cdiv" set_property="objt"/>
+
+								<attachment_group class="horizontal_arrange" horizontal_layout="-1,-2" horizontal_offset="0" vertical_inset="0">
+									<global id="horizontal_gap" name="ui.main_contrast_box_gap"/>
+								</attachment_group>
+
+								<container id="cost" navigation_container="true" default_focus="false">
+									<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+									<widget class="competition_stage_panel" file="none">
+										<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+										<record id="object_property" get_property="objt" set_property="objt" />
+										<boolean id="overview_version" value="true" />
+
+										<widget class="league_past_positions_panel">
+											<record id="object_property" get_property="objt" set_property="objt" />
+										</widget>
+
+										<!-- group box which extends to include all other areas -->
+										<container>
+											<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+											<!-- the group box that is the main container for the competition stage panel this container holds whatever league or cup panel we need to create -->
+											<container class="inner_box" id="stse" force_title_borders="false">
+
+												<!-- buttons area -->
+												<container embed_in_frame="true">
+													<attachment_group class="title_embedded_panel_left" horizontal_offset="4"/>
+													<widget class="link_button_title" section="cssp" id="labl" embed_in_frame="true">
+														<translation id="text" translation_id="247175" type="use" value="Stages" />
+													</widget>
+													<!-- the stages menu: visible if more than one stage/substage -->
+													<widget class="view_menu_popup" id="stpb" sele="acsm" auto_tick_exclusive="true" save_session_state="true" embed_in_frame="true" auto_size="horizontal" show_button_appearance="false">
+													</widget>
+												</container>
+
+												<!-- bottom row of the stage panel is used to store cup draw buttons -->
+												<layout class="vertical_arrange" vertical_alignment="bottom,extend"/>
+
+												<!-- No game panel-->
+												<container id="nots" hidden="true">
+													<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+													<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+													<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+													<widget class="spacer" height="10" />
+													<widget class="text" id="nost" alignment="centre" spec="text" size="large" style="semi_bold, embossed" auto_size="vertical" />
+												</container>
+
+												<!-- group box for stage to go into -->
+												<container id="stgb">
+													<layout class="vertical_arrange" vertical_alignment="top,extend"/>
+													<container height="16"/>
+
+													<container>
+														<layout class="vertical_arrange" vertical_alignment="top,extend"/>
+
+														<!--league stage panel-->
+														<widget class="league_stage_panel" id="lspn" hidden="true" view="ovrC" league_table_heading_length="0"/>
+														<!--cup stage_panel-->
+														<widget class="cup_stage_panel" file="competition/cup overview stage" id="cstp" hidden="true" save_session_state="true" />
+														<!--group stage scrolling box (to be filled in code)-->
+														<widget class="scrolling_box" id="gscb" hidden="true" save_session_state="true" navigation_container="true"/>
+													</container>
+												</container>
+
+												<container>
+													<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+													<!-- The exceptions so point deductions in the league etc-->
+													<widget class="table" layout="-1" id="exta" auto_size="vertical" auto_size_rows="true" row_spacing="2" hidden="true" mode="fill_rows" />
+												</container>
+											</container>
+										</container>
+									</widget>
+								</container>
+							</container>
+						</container>
+					</container>
+				</container>
+			</container>		
+
+			<!-- MIDDLE AND RIGHT -->
+			<container >
+				<layout class="horizontal_arrange" horizontal_layout="-1,560" horizontal_gap="8"  />
+
+				<!-- MIDDLE -->
+				<container class="tcs_tabs" id="tove" default_item="over" save_default_state="true" save_session_state="true">
+
+					<!-- OVERVIEW -->
+					<container id="over">
+						<layout class="vertical_arrange" vertical_layout="360,-1,-1" vertical_gap="8"/>
+						<translation id="title" translation_id="336543" type="use" />
+
+						<container  class="tcs_box" >
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+							<widget class="club_overview_stadium_panel" id="clos" file="club/tcs/stadium" >
+								<record id="object_property">
+									<list id="get_properties">
+										<record>
+											<integer id="get_property" value="TsHA" />
+											<integer id="set_property" value="Shwn" />
+											<boolean id="dont_set_object" value="true" />
+										</record>
+										<record>
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="Cclu" />
+											<boolean id="dont_set_object" value="true" />
+										</record>
+										<record>
+											<integer id="get_property" value="Tsre" />
+											<integer id="set_property" value="objt" />
+											<boolean id="dont_set_hint" value="true" />
+										</record>
+									</list>
+								</record>
+							</widget>
+
+							<!-- NO STADIUM INFO -->
+							<widget class="text" id="NoSt" alignment="centre">
+								<translation id="text" translation_id="436452" type="use" value="Stadium information not available.[COMMENT: line of text saying when we don't have any information on a team's stadium]" />
+								<record id="object_property">
+									<integer id="get_property" value="TsHA" />
+									<integer id="set_property" value="hidn" />
+								</record>
+							</widget>
+						</container>
+
+						<!-- LEAGUE HISTORY -->
+						<container class="tcs_box">
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<widget class="club_league_history_graph" id="clhg" file="club/club league history graph no buttons" section="cmps">
+								<record id="object_property" get_property="objt" set_property="objt"/>
+							</widget>
+						</container>
+					</container>
+
+					<!-- TACTICS -->
+					<container id="tact">
+						<translation id="title" translation_id="363732" type="use" />
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<container class="tcs_box">
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<container class="team_container_information_overview_panel" id="csio" file="none" should_force_refresh="true" >
+								<attachment_group class="vertical_arrange" vertical_alignment="top,extend" />
+
+								<record id="object_property" get_property="objt" set_property="objt"/>
+
+								<widget class="pitch_with_tactics" id="pwtc" priority="1" icon_flags="show_name,show_extra_details,show_number,dont_show_team_names,drop_initial_if_possible,show_preview_info_popup" player_icon_file="player icons/club overview" pitch_draw_markings="true" line_width="1.4" pitch_line_colour="fg" alignment="centre,can_scale" minimum_height="300" default_height="-3">
+									<boolean id="vertical" value="true" />
+									<boolean id="pitch_dont_draw_indicators" value="true" />
+									<integer id="pitch_touchline_width_percentage" value="30" />
+									<integer id="pitch_vertical_padding" value="30" />
+									<string id="pitch_draw_grass" value="false" />
+									<string id="pitch_draw_goals" value="true" />
+									<string id="pitch_pattern" value="ui_circles" />
+									<integer id="pitch_alignment" value="centre_x,centre_y" />									
+								</widget>
+							</container>
+
+						</container>
+					</container>
+				</container>
+
+				<!-- RIGHT -->
+				<container >
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container class="tcs_tabs" id="tsta" default_height="-1" priority="1" default_item="st01" save_default_state="true" save_session_state="true">
+
+						<container id="st01" icon="icons/16px/info">
+							<translation id="title" translation_id="257300" type="use" value="Overview" />
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<container draw_horizontal_dividers="true" class="tcs_box">
+								<!-- MANAGE R PROFILE AND STAFF -->
+								<layout class="vertical_arrange" vertical_layout="200,-10"  vertical_gap="16"/>
+
+								<!-- MANAGER INFO -->
+								<widget class="club_overview_staff_panel" id="tStM" file="club/tcs/header manager" >
+									<record id="object_property">
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="objt" />
+									</record>
+								</widget>	
+
+								<!-- REST OF STAFF -->
+								<container class="client_object_viewer_xml_panel" file="club/tcs/staff" id="ctao" >
+									<translation id="title" type="use" value="Overview" />
+									<record id="object_property" get_property="objt" set_property="objt"/>
+								</container>
+							</container>
+						</container>
+
+						<!-- 	<container id="stma" icon="icons/16px/manager">
+				<translation id="title" translation_id="292695" type="use" value="Manager" />
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+				<container class="plain_box" appearance="FME/tabbed pane/subtle/tl corner/paper"  draw_horizontal_dividers="true" >
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<widget class="club_overview_staff_panel" id="tStM" file="none" >
+						<record id="object_property" get_property="objt" set_property="objt"/>
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						<boolean id="should_force_refresh" value="true"/>
+
+						<container  id="manC">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/> 
+
+							<widget class="person_snapshot_club_overview_panel" id="mana" player="false" file="none">
+								<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+								<record id="object_property" get_property="TMnR" set_property="objt"/>
+
+								<widget class="non_player_profile_panel" id="Phum" file="club/tcs/tcs22v2/ai_manager">
+									<record id="object_property" get_property="objt" set_property="objt"/>
+								</widget>
+							</widget>
+						</container>
+
+						<container id="nomC">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+							<widget class="object_action_button" id="oabt" action_id="TCpJ" colour="secondary" red_replacement="secondary">
+								<record id="object_property">
+									<integer id="get_property" value="objt" />
+									<integer id="set_property" value="objt" />
+								</record>
+							</widget>
+						</container>
+					</widget>	
+
+				</container>
+			</container> -->
+
+						<container id="st03" icon="icons/16px/formation">
+							<translation id="title" translation_id="306490" type="use" value="All Players[COMMENT: match analysis panel; view all players label]" />
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<container draw_horizontal_dividers="true" >
+								<!-- MANAGE R PROFILE AND STAFF -->
+								<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+								<!-- MANAGER INFO -->
+								<widget class="club_players_panel" id="Capl" >
+									<record id="object_property" get_property="objt" set_property="objt"/>
+								</widget>	
+							</container>
+						</container>
+
+						<container id="st04" icon="icons/16px/manager">
+							<translation id="title" type="use" value="All Staff" />
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<container draw_horizontal_dividers="true" >
+								<!-- MANAGE R PROFILE AND STAFF -->
+								<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+								<!-- MANAGER INFO -->
+								<widget class="team_container_staff_details_panel" id="tcsp" >
+									<record id="object_property" get_property="objt" set_property="objt"/>
+								</widget>	
+							</container>
+						</container>
+
+					</container>
+				</container>
+			</container>
+		</container>
+
+		<!-- BOTTOM SECTION -->
+		<container draw_vertical_dividers="true">
+			<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="16"/>
+
+			<container>
+			</container>
+			<container>
+			</container>
+			<container>
+			</container>
+
+		</container>
+	</container>
+</panel>
