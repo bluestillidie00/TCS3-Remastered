@@ -81,7 +81,7 @@
 					</widget>
 
 					<!-- SURFACE -->
-					<widget class="pitch_surface_type_label" id="SsfV" size="large" style="bold" alignment="centre_x,top">
+					<widget class="pitch_surface_type_label" id="SsfV" size="large" style="bold" alignment="centre_x,top,can_scale">
 						<record id="object_property">
 							<integer id="get_property" value="SsfT" />
 						</record>
