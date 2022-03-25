@@ -1,9 +1,9 @@
 <record>
-	<string id="name" value="TCS4 Alpha 0.2.0" />
+	<string id="name" value="TCS4 Alpha-0.3.0" />
 	<string id="author" value="Bluestilldie00" />
 	<string id="description" value="TCS4" />					
 	<string id="version" value="1.0" />
 	<flags id="parent" value="fm" />
-	<string id="skin_name" value="TCS4020" />
+	<string id="skin_name" value="TCS4030" />
 	<string id="required_version" value="22.0.0" />
 </record>
