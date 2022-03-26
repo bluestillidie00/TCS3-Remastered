@@ -1,0 +1,146 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+	<list id="properties_to_add_to_context">
+		<integer value="Ttea"/>
+	</list>
+
+	<list id="properties_to_forward">
+		<record get_property="aprn" target="bpic" set_property="file"/>
+		<record get_property="rrep" target="bpic" set_property="rrep"/>
+	</list>
+
+	<flags id="titA" value="menus/standard/heading_item"/>
+
+	<container>
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+		<widget class="picture" file="boxes/custom/match/card/paper" id="bpic" scale_picture="true" keep_aspect_ratio="false"/>
+
+		<container class="container_with_mouse_events" id="cefw">
+			<layout class="vertical_arrange" vertical_alignment="bottom,extend" vertical_gap="0" horizontal_inset="2"/>
+
+			<container>
+				<layout class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" vertical_offset="2"/>
+
+				<container background_colour="bg lighter" height="16">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container>
+						<layout class="horizontal_arrange" horizontal_layout="-1"/>
+
+						<!-- Name -->
+						<widget class="person_button" id="pbtn" disable_link="true" format="[%person#1-shirt]" navigation_focus_target="false" alignment="centre,can_scale" font="title" size="small" person_is_player="true">
+							<record id="object_property" get_property="objt" set_property="valu" />
+						</widget>
+
+					</container>
+
+				</container>
+
+				<!-- Block -->
+				<container>
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container>
+						<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_gap="0"/>
+
+						<container>
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<container>
+								<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="-10"/>
+
+								<container width="48">
+									<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0"/>
+
+									<!--shirt-->
+									<container>
+										<layout class="vertical_arrange" vertical_alignment="bottom"/>
+										<widget class="shirt_number_label" id="PsnS" height="48">
+											<layout class="stick_to_sides_attachment" alignment="bottom" inset="-6"/>
+										</widget>
+									</container>
+
+								</container>
+
+								<container width="48">
+									<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0"/>
+
+									<widget class="object_portrait_picture" id="pict" image_alignment="bottom" width="48" scale_picture="true">
+										<record id="object_property" get_property="objt" set_property="objt" />
+									</widget>
+
+									<container>
+										<layout class="stick_to_sides_attachment" alignment="top,right" inset="0" apply_to_children="true"/>
+										<widget class="picture" file="icons/16px/slightly injured" height="16" width="16" id="inji" scale_picture="true"/>
+									</container>
+
+								</container>
+
+							</container>
+
+							<!-- Goal/Injury/Sub Icons -->
+							<container>
+								<layout class="vertical_arrange" vertical_alignment="top,extend"/>
+
+								<container height="16">
+									<layout class="horizontal_arrange" horizontal_alignment="middle,extend" horizontal_offset="2"/>
+
+									<!--Goal icon if needed-->
+									<widget class="client_object_property_panel" property="MPgl" id="MPgl" width="16">
+										<record id="widget_properties">
+											<flags id="scale_picture" value="false" />
+											<flags id="image_alignment" value="top" />
+											<boolean id="label_disabled" value="true"/>
+										</record>
+									</widget>
+
+									<container/>
+
+									<!--injury/sub icon if needed-->
+									<widget class="client_object_property_panel" property="PinD" id="PinD" width="16">
+										<record id="widget_properties">
+											<flags id="label_disabled" value="true" />
+										</record>
+									</widget>
+
+								</container>
+
+								<container/>
+
+							</container>
+
+						</container>
+
+						<!-- Position -->
+						<widget class="tactic_button" id="Pshp" appearance="boxes/custom/solid/paper" disabled="false" wants_mouse_events="false" alignment="centre" font="title" size="small" height="16"/>
+
+					</container>
+
+					<!--The button that will get clicks-->
+					<widget class="popup_button" id="abtn" appearance="buttons/custom/over state only/square/button" down_arrow_appearance="" fixed="true" select_event="acsl" default_focus="false"/>
+
+				</container>
+
+			</container>
+
+			<!-- Bottom Strip -->
+			<container class="main_box_no_margin" appearance="boxes/custom/darken/no margin/paper" height="25">
+				<layout class="horizontal_arrange" horizontal_alignment="middle"/>
+
+				<widget class="body_language_widget" width="16" id="Pmtc" label_disabled="true" icon_alignment="centre" appearance="" navigation_focus_target="false"/>
+
+				<widget class="match_rating_label_formatted" id="rtIc" format="[%fraction#1-2.1]" dont_format_numeric_grouping="true" alignment="centre" navigation_focus_target="false" auto_size="horizontal" wants_mouse_events="false" minimum_width="38" default_width="-1" priority="1"/>
+
+				<widget class="client_object_property_panel" width="16" property="PcOI" navigation_focus_target="false" id="PcOI" label_disabled="true" show_hover_popup="true" icon_alignment="centre">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>
