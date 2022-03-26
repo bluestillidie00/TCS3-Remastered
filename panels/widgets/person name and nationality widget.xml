@@ -1,0 +1,27 @@
+<panel auto_size_minimum_height="60">
+  <flags id="child_for_sort" value="PnmP"/>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<container class="horizontal_adaptive_container" offset="0" inset="0" gap="4">
+
+		<widget class="object_portrait_picture" id="kaoP" image_alignment="right,centre_y" scale_picture="true" keep_aspect_ratio="true" clickable="false" minimum_width="38" priority="1">
+		  <record id="object_property" get_property="Pers" set_property="objt"/>
+		  <layout class="stick_to_sides_attachment" alignment="vertical" inset="1,0,0,0"/>
+		</widget>
+
+		<container default_width="-1" minimum_width="100" priority="2">
+		  <attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="2" vertical_gap="0" horizontal_inset="0"/>
+
+			<widget class="person_button" id="PnmP" info_popup_enabled="true" info_popup_alignment="left,centre_y" auto_size="vertical" style="semi_bold">
+			  <record id="object_property" get_property="PnmP" set_property="valu"/>
+			</widget>
+
+			<widget class="person_nationality_button" auto_size="vertical" colour="faded text">
+			  <record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+		</container>
+
+	</container>
+  
+</panel>
