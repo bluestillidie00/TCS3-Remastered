@@ -4,7 +4,7 @@
 
     <!-- IF WE DO HAVE THE CONTENT -->
     <container>
-        <layout class="horizontal_arrange" horizontal_layout="100,-3,-4" horizontal_gap="16" />
+        <layout class="horizontal_arrange" horizontal_layout="92,-3,-4" horizontal_gap="16" />
 
         <!-- PLAYER PICTURE -->
         <widget class="picture" id="picM" scale_picture="true" keep_aspect_ratio="true" width="92" alignment="bottom">
