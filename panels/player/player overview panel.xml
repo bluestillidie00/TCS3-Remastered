@@ -14,9 +14,9 @@
 
 			<container class="client_object_viewer_selector_panel" id="csh0" file="player/player overview small selector panel" dont_set_embedded_title="true">
 				<integer id="default_for_unemployed_managers" value="ptri"/>
-				<integer id="default_for_international_managers_other_team" value="ptri"/>
-				<integer id="default_for_everyone_else" value="ptri"/>
-				<integer id="default_for_versus_mode" value="ptri"/>
+				<integer id="default_for_international_managers_other_team" value="paAn"/>
+				<integer id="default_for_everyone_else" value="paAn"/>
+				<integer id="default_for_versus_mode" value="paAn"/>
 			</container>
 		</container>
 	</container>
@@ -38,14 +38,16 @@
 						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 						<container class="client_object_viewer_selector_panel" id="csL1" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
+						
 							<widget file="player/tcs/selector/big/reports" class="client_object_viewer_xml_panel" id="tCSR" late_loading="true">
 								<record id="object_property" get_property="objt" set_property="objt"/>
 								<translation id="title" translation_id="254774" type="use" />
 							</widget>
-							<integer id="default_for_unemployed_managers" value="phb1"/>
-							<integer id="default_for_international_managers_other_team" value="phb1"/>
-							<integer id="default_for_everyone_else" value="phb1"/>
-							<integer id="default_for_versus_mode" value="phb1"/>
+							
+							<integer id="default_for_unemployed_managers" value="tCSR"/>
+							<integer id="default_for_international_managers_other_team" value="tCSR"/>
+							<integer id="default_for_everyone_else" value="tCSR"/>
+							<integer id="default_for_versus_mode" value="tCSR"/>
 						</container>
 					</container>
 
@@ -53,10 +55,10 @@
 						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 						<container class="client_object_viewer_selector_panel" id="csL2" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
-							<integer id="default_for_unemployed_managers" value="phb1"/>
-							<integer id="default_for_international_managers_other_team" value="phb1"/>
-							<integer id="default_for_everyone_else" value="phb1"/>
-							<integer id="default_for_versus_mode" value="phb1"/>
+							<integer id="default_for_unemployed_managers" value="pscR"/>
+							<integer id="default_for_international_managers_other_team" value="pscR"/>
+							<integer id="default_for_everyone_else" value="pscR"/>
+							<integer id="default_for_versus_mode" value="pscR"/>
 						</container>
 					</container>
 				</container>
@@ -81,10 +83,10 @@
 								<integer id="default_for_international_managers_other_team" value="pfSm"/>
 								<integer id="default_for_everyone_else" value="pfSm"/>
 								<integer id="default_for_versus_mode" value="pfSm"/>
-								
-								    <widget class="player_form_panel" id="pfSm" late_loading="true" file="player/tcs/selector/big/form 20">
-        <translation id="title" value="Form (Last 20 Matches)" type="use" />
-    </widget>
+
+								<widget class="player_form_panel" id="pfSm" late_loading="true" file="player/tcs/selector/big/form 20">
+									<translation id="title" value="Form (Last 20 Matches)" type="use" />
+								</widget>
 							</container>
 						</container>
 
@@ -97,10 +99,10 @@
 							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 							<container class="client_object_viewer_selector_panel" id="csL3" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
-								<integer id="default_for_unemployed_managers" value="phb1"/>
-								<integer id="default_for_international_managers_other_team" value="phb1"/>
-								<integer id="default_for_everyone_else" value="phb1"/>
-								<integer id="default_for_versus_mode" value="phb1"/>
+								<integer id="default_for_unemployed_managers" value="Ppos"/>
+								<integer id="default_for_international_managers_other_team" value="Ppos"/>
+								<integer id="default_for_everyone_else" value="Ppos"/>
+								<integer id="default_for_versus_mode" value="Ppos"/>
 							</container>
 						</container>
 
@@ -108,10 +110,10 @@
 							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 							<container class="client_object_viewer_selector_panel" id="csL4" minimum_width="330" default_width="-1" priority="3" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true" >
-								<integer id="default_for_unemployed_managers" value="phb1"/>
-								<integer id="default_for_international_managers_other_team" value="phb1"/>
-								<integer id="default_for_everyone_else" value="phb1"/>
-								<integer id="default_for_versus_mode" value="phb1"/>
+								<integer id="default_for_unemployed_managers" value="PrCo"/>
+								<integer id="default_for_international_managers_other_team" value="PrCo"/>
+								<integer id="default_for_everyone_else" value="PrCo"/>
+								<integer id="default_for_versus_mode" value="PrCo"/>
 							</container>
 
 						</container>
