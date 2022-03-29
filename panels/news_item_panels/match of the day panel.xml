@@ -52,7 +52,7 @@
 				<!-- Attendance -->
 				<container width="175" priority="4">
 					<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0"/>
-					
+
 					<widget class="picture" file="icons/custom/team stats/stadium" image_alignment="centre" scale_picture="false" auto_size="horizontal"/>
 
 					<container>
@@ -104,10 +104,11 @@
 
 	<!-- Match results section -->
 	<container draw_vertical_dividers="true">
-		<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="20" />
+		<!-- <attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="20" /> -->
+		<layout class="horizontal_arrange" horizontal_layout="-1,-2" horizontal_gap="24"/>
 
 		<!-- Match descriptions -->
-		<container class="inner_box">
+		<container class="main_box">
 			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
 			<translation id="title" translation_id="388192" type="use" value="Key Matches[COMMENT: FR 10315; competition round-up news item; key match descriptions section title]"/>
@@ -117,7 +118,45 @@
 					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="10" horizontal_alignment="horizontal" horizontal_inset="0" />
 
 					<!-- First match result-->
-					<container class="property_list_viewer_xml_panel" id="res1" file="news_item_panels/match of the day main result item panel" height="32" />
+					<container class="property_list_viewer_xml_panel" id="res1" file="none" height="60" >
+						<attachment_group class="horizontal_arrange" horizontal_alignment="middle,fill" horizontal_gap="4"/>
+
+
+						<!-- Home team name -->
+						<widget class="team_button" icon_enabled="false" alignment="right,centre_y" style="bold" navigation_focus_target="true">
+
+							<record id="object_property" get_property="home" dont_set_object="true"/>
+						</widget>
+
+						<container id="cent">
+							<attachment_group class="horizontal_arrange_autosize" horizontal_gap="8" vertical_inset="0" />
+
+							<!-- Home team logo -->
+							<widget class="object_portrait_picture" image_alignment="centre" scale_picture="true" width="54">
+								<record id="object_property" get_property="home" dont_set_object="true"/>
+							</widget>
+
+							<container>
+								<attachment_group class="horizontal_arrange_autosize" horizontal_offset="0" horizontal_gap="1" vertical_inset="0" />
+								<!-- scoreline -->
+								<widget class="text" size="15" alignment="centre" auto_size="horizontal" style="bold" navigation_focus_target="true">
+									<record id="object_property" get_property="FxRs" dont_set_object="true"/>
+								</widget>
+							</container>
+
+							<!-- Away team logo -->
+							<widget class="object_portrait_picture" scale_picture="true" width="54" image_alignment="centre">
+								<record id="object_property" get_property="away" dont_set_object="true"/>
+							</widget>
+						</container>
+
+						<!-- Away team name -->
+						<widget class="team_button" icon_enabled="false" style="bold" navigation_focus_target="true">
+
+							<record id="object_property" get_property="away" dont_set_object="true"/>
+						</widget>					
+					</container>
+
 					<widget class="text" id="mde1" auto_size="vertical" colour="faded text"/>
 
 					<widget class="horizontal_divider" />
@@ -160,8 +199,8 @@
 			</container>
 
 			<!-- side by side above 500 px -->
-			<container id="sbsc">
-				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" vertical_inset="0" />
+			<container id="sbsc" draw_vertical_dividers="true">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="24" />
 
 				<container>
 					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
