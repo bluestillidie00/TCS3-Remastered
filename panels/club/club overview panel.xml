@@ -11,12 +11,16 @@
 			<!-- CONTAINER HOLDING KIT AND PLAER PIC -->
 			<container width="300" >
 				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="-60" />
+								
+				<container>
+<layout class="stick_to_sides_attachment" apply_to_children="true" inset="16"/>
 
 				<!-- CLUB LOGO -->
 				<widget class="object_portrait_picture" id="lepi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
 					<record id="object_property" get_property="Cdiv"/>
 				</widget>
-
+			</container>
+				
 				<!-- COMP LOGO -->
 				<widget class="picture" id="pict" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
 					<record id="object_property" get_property="mnpc"/>
