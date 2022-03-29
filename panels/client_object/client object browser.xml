@@ -37,6 +37,34 @@
             <integer id="set_property" value="hidn" />
         </attachment>
     </widget>
+    
+        <container class="plain_box" appearance="backgrounds/bg" transparency="1">
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
+                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
+                <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+            </list>
+            <integer id="set_property" value="hidn" />
+        </attachment>
+    </container>
+
+    <!-- TRANSPARENCY -->
+<!-- EDIT TRANSPARENCY FIGURE, 0 IS COMPLETELY TRANSPARENT, 1 IS OPAQUE -->
+<!-- RECOMMENDED IS 0.85 -->
+    <container class="plain_box" appearance="backgrounds/overlay" transparency="0.92">
+    <!-- <container class="plain_box" appearance="backgrounds/overlay" transparency="1"> -->
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
+                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
+                <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+            </list>
+            <integer id="set_property" value="hidn" />
+        </attachment>
+    </container>
 
     <widget class="inner_contrast_box" appearance="tcs/boxes/ui/content/paper">
         <layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
