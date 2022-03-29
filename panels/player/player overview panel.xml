@@ -22,7 +22,7 @@
 	</container>
 
 	<container>
-		<layout class="vertical_arrange" vertical_layout="580,-1" vertical_gap="8"/>
+		<layout class="vertical_arrange" vertical_layout="-580,-170" vertical_gap="8"/>
 
 		<container class="tcs_tabs" id="popt" default_item="over" save_default_state="true" save_session_state="true" >
 
