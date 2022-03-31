@@ -60,7 +60,7 @@
 						<global id="gap" name="ui.split_button_row_gap"/>
 					</layout>
 
-					<widget class="icon_button" id="askp" auto_size="all" appearance="buttons/subtle/split/left/button" controller_button="y_button">
+					<widget class="icon_button" id="askp" auto_size="all" appearance="buttons/subtle/split/left/button" controller_button="y_button" icon="icons/26px/squad">
 						<translation id="text" translation_id="344655" type="use" value="Quick Pick[COMMENT - team screen team selection, contains the former Ask To Pick menu but also acts as a standalone button which picks the team, renamed for accuracy]" />
 					</widget>
 					
