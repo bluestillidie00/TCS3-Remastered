@@ -52,7 +52,7 @@
                     </widget>
 
                     <!-- NAME -->
-                    <widget class="person_button" id="perM" style="bold" info_popup_enabled="true" >
+                    <widget class="person_button" id="perM" style="bold" info_popup_enabled="true" colour="fg" >
                         <record id="object_property" get_property="Pers" set_property="valu" />
                     </widget>
 

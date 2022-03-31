@@ -34,7 +34,7 @@
 						<attachment_group class="vertical_arrange" vertical_alignment="fill" />
 
 						<!-- NAME -->
-						<widget class="person_button" style="semi_bold" alignment="left,centre_y" info_popup_enabled="true" person_is_human="true">
+						<widget class="person_button" style="semi_bold" alignment="left,centre_y" info_popup_enabled="true" person_is_human="true" colour="fg">
 							<record id="object_property" get_property="Pers" set_property="valu" />
 						</widget>
 
