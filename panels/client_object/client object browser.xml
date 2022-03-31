@@ -65,7 +65,7 @@
             <integer id="set_property" value="hidn" />
         </attachment>
     </container>
-
+<!-- 
     <widget class="inner_contrast_box" appearance="tcs/boxes/ui/content/paper">
         <layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
         <layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="mai1"/>
@@ -76,14 +76,13 @@
         <attachment class="test_multiple_globals_attachment" default_value="false">
             <list id="get_properties">
                 <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
-                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
                 <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
                 <record get_property="HdBk" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
             </list>
             <integer id="set_property" value="hidn" />
         </attachment>
     </widget>
-
+ -->
     <!-- match background picture - covers entire screen -->
     <widget class="picture" id="Mbkg" scale_picture="true" keep_aspect_ratio="false">
         <record id="object_property">
@@ -113,24 +112,6 @@
 
         <!--when the screen size changes, so does the width of the sidebar - make sure we lay ourselves out correctly-->
         <attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1124" action_event="layD" disable_setting_name="force_small_sidebar"/>
-
-        <widget class="sidebar_menu_table" id="side" width="160">
-            <record id="object_property">
-                <integer id="get_property" value="objt" />
-                <integer id="set_property" value="cotO" />
-            </record>
-
-            <attachment class="test_multiple_globals_attachment" default_value="true">
-                <list id="get_properties">
-                    <record get_property="TTyp" test_mode="equal" value="1" skip_if_null="false" />
-                    <record get_property="hide_sidebar" test_mode="equal" comparison_mode="or" value="true" skip_if_null="false" />
-                </list>
-                <integer id="set_property" value="FoHi" />
-            </attachment>
-
-            <attachment class="test_setting_attachment" get_setting="force_small_sidebar" value="true" skip_if_false="true" default_value="false" set_property="widt" true_value="45"/>
-            <attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1200" set_property="widt" true_value="45" false_value="160" disable_setting_name="force_small_sidebar"/>
-        </widget>
 
         <container>
             <layout class="arrange_vertical_attachment" alignment="bottom,extend" gap="-30" offset="0" />
@@ -236,14 +217,34 @@
                                 </container>
                             </container>
 
-                            <container class="inner_box_no_margin">
+                            <container class="inner_box_no_margin" appearance="tcs/boxes/ui/content/paper">
                                 <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
 
                                 <!-- main area - contains sections/actions panel and content areas -->
                                 <container id="main">
                                     <layout class="arrange_horizontal_attachment" alignment="middle,extend" gap="0" offset="0"/>
                                     <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+                                    
+                                    
+        <widget class="sidebar_menu_table" id="side" width="160">
+            <record id="object_property">
+                <integer id="get_property" value="objt" />
+                <integer id="set_property" value="cotO" />
+            </record>
 
+            <attachment class="test_multiple_globals_attachment" default_value="true">
+                <list id="get_properties">
+                    <record get_property="TTyp" test_mode="equal" value="1" skip_if_null="false" />
+                    <record get_property="hide_sidebar" test_mode="equal" comparison_mode="or" value="true" skip_if_null="false" />
+                </list>
+                <integer id="set_property" value="FoHi" />
+            </attachment>
+
+            <attachment class="test_setting_attachment" get_setting="force_small_sidebar" value="true" skip_if_false="true" default_value="false" set_property="widt" true_value="45"/>
+            <attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1200" set_property="widt" true_value="45" false_value="160" disable_setting_name="force_small_sidebar"/>
+        </widget>
+
+                                                                        
                                     <!-- screen content area -->
                                     <container id="scca" auto_size="horizontal">
                                         <layout class="stick_to_sides_attachment" alignment="all" inset="12" apply_to_children="true"/>
