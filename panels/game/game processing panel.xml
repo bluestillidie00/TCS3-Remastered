@@ -34,7 +34,7 @@
 		<animation class="slide_in_top_animation" duration="0.6" tween="ease_out" />
 
 		<!-- Header with next match info and browse button -->
-		<container background_colour="processing_box_background" height="85">
+		<container background_colour="processing_box_background" height="150">
 			<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="0" offset="8" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="10" />
 
@@ -62,7 +62,7 @@
 		</container>
 
 		<!-- Main calendar panel (Only used when there is a human) -->
-		<container id="cale" height="530">
+		<container id="cale" height="450">
 			<layout class="stick_to_sides_attachment" alignment="vertical,left" apply_to_children="true" inset="0" />
 
 			<container width="3200" ignore_error_detection="true">
@@ -135,27 +135,27 @@
 		<container class="processing_bar" id="prog" hidden="true"/>
 
 		<!-- Ticker with stats -->
-		<container background_colour="bg darker" id="tikC" height="50">
-			<layout class="arrange_horizontal_attachment" layout="2,120, 2,-1" offset="0" gap="10" />
+		<container bkcl="primary" id="tikC" height="50">
+			<layout class="arrange_horizontal_attachment" layout="24,120,24,4,-1" offset="0" gap="" />
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 			
+			<container bkcl="bg darker" />
+						
+			<widget class="picture" file="tcs/icons/smarterscout" image_alignment="centre" scale_picture="true" height="30" width="120" bkcl="bg darker"/>
+			
+			<container bkcl="bg darker" />
+			
 			<container />
-
-			<widget class="picture" file="tcs/icons/smarterscout" image_alignment="centre" scale_picture="true" height="30" width="120" />
-
-			<widget class="vertical_divider" red_replacement="text">
-				<layout class="stick_to_sides_attachment" alignment="vertical" inset="15" />
-			</widget>
-
+			
 			<widget class="animated_wipe_fade_container" id="tick" wipe_data_trigger_id="objt" >
-				<record id="widget_info" class="property_list_viewer_xml_panel" file="game/processing prozone panel" alignment="left,centre_y" colour="text"/>
+				<record id="widget_info" class="property_list_viewer_xml_panel" file="game/processing prozone panel" alignment="left,centre_y" colour="secondary"/>
 			</widget>
 		</container>
 
 		<!-- Footer with hints -->
 		<container background_colour="processing_box_background" height="85">
 
-			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right,extend" horizontal_offset="4"/>
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right,extend" horizontal_offset="8"/>
 
 			<container height="80">
 
@@ -170,10 +170,9 @@
 				</widget>
 
 				<widget class="text" id="hnt1" size="10" multiline="true" alignment="left,centre_y" colour="white"/>
-
 			</container>
 
-			<widget class="primary_icon_button" id="canc" auto_size="all" controller_button="b_button">
+			<widget class="primary_icon_button" id="canc" auto_size="all" controller_button="b_button" rrep="primary" colour="secondary">
 				<translation id="text" translation_id="229828" type="use" value="Cancel" />
 			</widget>
 
