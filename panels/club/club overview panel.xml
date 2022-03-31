@@ -13,7 +13,7 @@
 				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="-60" />
 								
 				<container>
-<layout class="stick_to_sides_attachment" apply_to_children="true" inset="16"/>
+<layout class="stick_to_sides_attachment" apply_to_children="true" inset="25"/>
 
 				<!-- CLUB LOGO -->
 				<widget class="object_portrait_picture" id="lepi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
