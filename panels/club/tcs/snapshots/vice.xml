@@ -52,11 +52,8 @@
                     </widget>
 
                     <!-- NAME -->
-                    <widget class="person_button" id="perM" style="bold" colour="fg">
-                        <record id="object_property">
-                            <integer id="get_property" value="objt" />
-                            <integer id="set_property" value="valu" />
-                        </record>
+                    <widget class="person_button" style="semi_bold" alignment="left,centre_y" info_popup_enabled="true" person_is_player="true" colour="fg">
+                        <record id="object_property" get_property="Pers" set_property="valu" />
                     </widget>
 
                     <!-- NATIONALITY -->
@@ -84,7 +81,7 @@
                 </container>
             </container>
         </container>
-        
+
         <!-- INFO -->
         <container>
             <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />

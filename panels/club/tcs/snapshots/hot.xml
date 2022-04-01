@@ -52,12 +52,9 @@
                     </widget>
 
                     <!-- NAME -->
-                    <widget class="person_button" id="perM" style="bold" colour="fg">
-                        <record id="object_property">
-                            <integer id="get_property" value="objt" />
-                            <integer id="set_property" value="valu" />
-                        </record>
-                    </widget>
+                    <widget class="person_button" style="semi_bold" alignment="left,centre_y" info_popup_enabled="true" person_is_player="true" colour="fg">
+							<record id="object_property" get_property="Pers" set_property="valu" />
+						</widget>
 
                     <!-- NATIONALITY -->
                     <widget class="person_nationality_button" id="natM" colour="faded text" icon_enabled="true" alignment="left,centre_y" icon_alignment="left"  display_format="3">
