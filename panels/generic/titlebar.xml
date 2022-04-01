@@ -3,7 +3,7 @@
     <layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
     <container class="tcs_ui" appearance="tcs/boxes/ui/titlebar/paper" rrep="tcs_bg">
-    <!-- T, L, B, R -->
+        <!-- T, L, B, R -->
         <layout class="stick_to_sides_attachment" alignment="all" inset="5,5,0,5"/>
     </container>
 
@@ -45,6 +45,36 @@
 
                     <boolean id="should_force_refresh" value="true" />
 
+                    <container width="60">
+                        <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+                        <!-- BACKGROUND COLOUR USED IN CASE TEAMS DON'T HAVE A KIT DESIGN -->
+                        <container class="tcs_box" appearance="tcs/backgrounds/overlay/100" rrep="primary" />
+
+                        <!-- kit style background image -->
+                        <widget class="picture" id="ktbg" scale_picture="false" keep_aspect_ratio="true" image_alignment="left" file="graphics/pictures/kit/back" width="60">
+                                                        <!-- set kit 'background' logo -->
+                            <record id="object_property">
+                                <integer id="get_property" value="ktgb"/>
+                                <integer id="set_property" value="file"/>
+                            </record>
+                        </widget>
+
+
+                        <!-- PRIMARY LOGO -->
+                        <widget class="picture" id="lgtF" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="60">
+                            <layout class="stick_to_sides_attachment" alignment="vertical" inset="1" />
+                            <attachment class="test_setting_attachment" get_setting="show_badges" default_value="true" set_property="hidden">
+                                <boolean id="value" value="false" />
+                            </attachment>
+                            <record id="object_property" get_property="mnpc" set_property="file"/>
+                        </widget>
+
+                        <container class="plain_box" appearance="tcs/ro" rrep="tcs_bg"/>
+
+
+                    </container>
+
                     <container class="tcs_ui" rrep="primary" >
                         <attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" horizontal_gap="4"/>
 
@@ -53,15 +83,6 @@
 
                         <container id="flik">
                             <attachment_group class="horizontal_arrange_autosize"/>
-
-                            <!-- PRIMARY LOGO -->
-                            <widget class="picture" id="lgtF" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="60">
-                                <layout class="stick_to_sides_attachment" alignment="vertical" inset="1" />
-                                <attachment class="test_setting_attachment" get_setting="show_badges" default_value="true" set_property="hidden">
-                                    <boolean id="value" value="false" />
-                                </attachment>
-                                <record id="object_property" get_property="mnpc" set_property="file"/>
-                            </widget>
 
                             <!-- QUICK FLICKS -->
                             <container width="20">
@@ -94,20 +115,6 @@
                     <!-- Group of buttons in the top right -->
                     <container >
                         <attachment_group class="horizontal_arrange_autosize" horizontal_gap="4" />
-
-                        <!-- IN GAME EDITOR -->
-                        <container width="50" class="tcs_ui" >
-                            <layout class="stick_to_sides_attachment" apply_to_children="true"/>
-
-                            <widget class="edit_object_icon_button" id="edit" fixed="true" icon="icons/16px/edit" icon_alignment="centre" appearance="chrome/buttons/items/button" auto_size="none" multiline="false" width="44" height="44" secondary_icon_enabled="false">
-                                <record id="primary_icon_properties" red_replacement="fg" />
-                                <attachment class="flash_colour_attachment" auto_start="false" rate="850">
-                                    <colour id="first_colour" red="49" green="52" blue="63" />
-                                    <colour id="second_colour" red="46" green="103" blue="182" />
-                                    <flags id="colour_property" value="bkcl" />
-                                </attachment>
-                            </widget>         
-                        </container>
 
                         <container width="50" class="tcs_ui" >
                             <layout class="stick_to_sides_attachment" apply_to_children="true"/>
