@@ -227,6 +227,15 @@
 
                                     <!--Match Options-->
                                     <widget class="match_tactics_toggle_button" />
+                                    
+                                                         <widget class="edit_object_icon_button" id="edit" fixed="true" icon="icons/16px/edit" icon_alignment="centre" appearance="chrome/buttons/items/button" auto_size="none" multiline="false" width="44" height="44" secondary_icon_enabled="false">
+                                <record id="primary_icon_properties" red_replacement="fg" />
+                                <attachment class="flash_colour_attachment" auto_start="false" rate="850">
+                                    <colour id="first_colour" red="49" green="52" blue="63" />
+                                    <colour id="second_colour" red="46" green="103" blue="182" />
+                                    <flags id="colour_property" value="bkcl" />
+                                </attachment>
+                            </widget>      
 
                                     <!--Backroom Advice-->
                                     <widget class="backroom_advice_trigger_button" id="BaC1" />
