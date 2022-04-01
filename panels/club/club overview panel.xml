@@ -485,11 +485,14 @@
 
 					<container class="tcs_box">
 						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
-						<!--snapshot selector 2-->
-						<container class="client_object_viewer_selector_panel" id="cos2" minimum_height="300" priority="3" default_height="-3">
 
+						<!--snapshot selector 2-->
+						<container class="client_object_viewer_selector_panel" id="cos2" minimum_height="300" priority="3" default_height="-3" save_session_state="true">
 							<widget class="club_league_history_graph" id="clhg" file="club/club league history graph no buttons" section="cmps">
 								<translation id="title" translation_id="319446" type="use" />
+							</widget>
+							<widget class="team_container_records_landmarks_panel" id="ldmk">
+								<translation id="title" translation_id="248354" type="use" />
 							</widget>
 							<widget class="team_container_information_background_panel" id="Cbac">
 								<translation id="title" translation_id="333728" type="use" />
@@ -498,6 +501,7 @@
 								<translation id="title" translation_id="445076" type="use" />
 							</widget>
 						</container>
+						
 					</container>		
 				</container>
 			</container>
