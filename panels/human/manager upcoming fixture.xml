@@ -7,10 +7,10 @@
 		<!--container shown when there is a next match available-->
 		<container id="nemc" hidden="true">
 			<layout class="vertical_arrange" vertical_layout="-12,-10" />
-			
-					<container class="tcs_box">
-<layout class="stick_to_sides_attachment" apply_to_children="true"/>
-			<widget class="team_upcoming_fixture_info_panel" file="team/team upcoming fixture info manager home" id="tmip" omit_prefix="true"/>
+
+			<container class="tcs_box">
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+				<widget class="team_upcoming_fixture_info_panel" file="team/team upcoming fixture info manager home" id="tmip" omit_prefix="true"/>
 			</container>
 
 			<container >

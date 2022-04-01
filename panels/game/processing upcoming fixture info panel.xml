@@ -30,6 +30,6 @@
     </container>
 
     <!-- UPCOMING FIXTURES -->
-    <container class="manager_upcoming_fixtures_panel" id="mufp" row_count="2"/>
+    <container class="manager_upcoming_fixtures_panel" id="mufp" row_count="6" file="human/manager upcoming fixtures fixed"/>
 
 </panel>
