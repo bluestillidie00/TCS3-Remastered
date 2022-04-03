@@ -101,87 +101,88 @@
 
 		</container>
 
-		<container class="horizontal_adaptive_container" id="cops" mode="distribute_equally" offset="0" inset="0" draw_vertical_dividers="true">
+		<container class="tcs_tabs" default_item="over" save_default_state="true" save_session_state="true" >
 
-			<attachment class="test_screen_size_attachment" skip_if_false="true">
-				<list id="properties">
-					<record>
-						<flags id="alignment" value="vertical" />
-						<integer id="min_value" value="0" />
-						<integer id="max_value" value="601" />
-						<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
-						<symbol id="set_property" value="hidden" />
-						<integer id="true_value" value="true" />
-						<integer id="false_value" value="true" />
-					</record>
-					<record min_value="601" max_value="10000" true_value="false"/>
-				</list>
-			</attachment>
+			<!-- OVERVIEW -->
+			<container class="horizontal_adaptive_container" id="over" mode="distribute_equally" offset="0" inset="0" draw_vertical_dividers="true">
+				<translation id="title" translation_id="247414" type="use"/>
 
+				<global id="gap" name="ui.main_box_gap"/>
+				<!-- Player stats-->
+				<container class="main_box" id="cmpS" minimum_width="625" priority="1" default_width="-3" navigation_container="true">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="8" />
 
-			<global id="gap" name="ui.main_box_gap"/>
-			<!-- Player stats-->
-			<container class="main_box" id="cmpS" minimum_width="625" priority="1" default_width="-3" navigation_container="true">
-				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="8" />
+					<widget class="link_button_title" section="cspl" >
+						<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+						<translation id="text" translation_id="416342" type="use" value="Player Stats[COMMENT: competition overview player stats panel; panel title]" />
+					</widget>
 
-				<widget class="link_button_title" section="cspl" >
-					<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
-					<translation id="text" translation_id="416342" type="use" value="Player Stats[COMMENT: competition overview player stats panel; panel title]" />
-				</widget>
+					<container class="vertical_adaptive_container" inset="0" offset="0">
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 
-				<container class="vertical_adaptive_container" inset="0" offset="0">
-					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+						<container class="horizontal_adaptive_container" default_height="-1" minimum_height="126" priority="1" gap="15">
 
-					<container class="horizontal_adaptive_container" default_height="-1" minimum_height="126" priority="1" gap="15">
+							<record id="default_properties" file="competition/competition overview player stats panel" maximum_items="3" default_width="-1" minimum_width="250" />
 
-						<record id="default_properties" file="competition/competition overview player stats panel" maximum_items="3" default_width="-1" minimum_width="250" />
-
-						<!-- CPS_GOALS-->
-						<container class="competition_player_stats_panel" type="2" priority="1" navigation_container="true">
-							<record id="object_property" get_property="objt" set_property="objt" />
+							<!-- CPS_GOALS-->
+							<container class="competition_player_stats_panel" type="2" priority="1" navigation_container="true">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</container>
+							<!-- CPS_AVERAGE_RATING -->
+							<container class="competition_player_stats_panel" type="27" priority="2" navigation_container="true">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</container>
+							<!-- CPS_ASSISTS -->
+							<container class="competition_player_stats_panel" type="5" priority="3" navigation_container="true">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</container>
 						</container>
-						<!-- CPS_AVERAGE_RATING -->
-						<container class="competition_player_stats_panel" type="27" priority="2" navigation_container="true">
-							<record id="object_property" get_property="objt" set_property="objt" />
-						</container>
-						<!-- CPS_ASSISTS -->
-						<container class="competition_player_stats_panel" type="5" priority="3" navigation_container="true">
-							<record id="object_property" get_property="objt" set_property="objt" />
-						</container>
-					</container>
 
-					<container class="horizontal_adaptive_container" default_height="-1" minimum_height="126" priority="3" >
-						<record id="default_properties" file="competition/competition overview player stats panel" maximum_items="3" default_width="-1" minimum_width="220" />
+						<container class="horizontal_adaptive_container" default_height="-1" minimum_height="126" priority="3" >
+							<record id="default_properties" file="competition/competition overview player stats panel" maximum_items="3" default_width="-1" minimum_width="220" />
 
-						<!-- CPS_MAN_OF_MATCH -->
-						<container class="competition_player_stats_panel" type="12" priority="1" navigation_container="true">
-							<record id="object_property" get_property="objt" set_property="objt" />
-						</container>
-						<!-- CPS_CLEAN_SHEETS -->
-						<container class="competition_player_stats_panel" type="20" priority="2" navigation_container="true">
-							<record id="object_property" get_property="objt" set_property="objt" />
-						</container>
-						<!-- CPS_YELLOW_CARDS -->
-						<container class="competition_player_stats_panel" type="10" priority="3" navigation_container="true">
-							<record id="object_property" get_property="objt" set_property="objt" />
+							<!-- CPS_MAN_OF_MATCH -->
+							<container class="competition_player_stats_panel" type="12" priority="1" navigation_container="true">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</container>
+							<!-- CPS_CLEAN_SHEETS -->
+							<container class="competition_player_stats_panel" type="20" priority="2" navigation_container="true">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</container>
+							<!-- CPS_YELLOW_CARDS -->
+							<container class="competition_player_stats_panel" type="10" priority="3" navigation_container="true">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</container>
 						</container>
 					</container>
 				</container>
-			</container>
 
-			<container class="competition_injury_table_panel" id="coic" file="competition/competition overview injury table" minimum_width="260" priority="2" default_width="-1" navigation_container="true">
-				<record id="object_property">
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="objt" />
-				</record>
-			</container>
+				<container class="competition_injury_table_panel" id="coic" file="competition/competition overview injury table" minimum_width="260" priority="2" default_width="-1" navigation_container="true">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</container>
 
-			<container class="client_object_viewer_xml_panel" id="Mmov" file="competition/competition manager movements mini panel" minimum_width="260" priority="3" default_width="-1" navigation_container="true">
-				<record id="object_property">
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="objt" />
-				</record>
+				<container class="client_object_viewer_xml_panel" id="Mmov" file="competition/competition manager movements mini panel" minimum_width="260" priority="3" default_width="-1" navigation_container="true">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</container>
 			</container>
+		
+		<!-- MEDIA DREAM ELEVEN 
+		<container id="dr11">
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+								<translation id="title" translation_id="420579" type="use" />
+		
+							<widget file="player/tcs/selector/big/reports" class="client_object_viewer_xml_panel" id="tCSR" late_loading="true">
+								<record id="object_property" get_property="objt" set_property="objt"/>
+							</widget>
+		</container> -->
+		
+		
 		</container>
 	</container>
 </panel>
