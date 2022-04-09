@@ -14,10 +14,9 @@
 			<container width="250">
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
-				<!-- KIT ICON -->
-				<container class="client_object_viewer_selector_panel" id="tKit" file="player/tcs/selector/kit/selector" save_session_state="true" >
-					<record id="object_property" get_property="objt" set_property="objt"/>
-				</container>
+<widget id="bak1" class="kit_icon" image_alignment="left" width="250" kit_zoom_level="3" priority="1" late_loading="true">
+		<record id="object_property" get_property="Pers" set_property="objt"/>
+			</widget>
 
 				<!-- Status Indicators -->
 				<widget class="player_status_all_button" id="psAB" maximised="true" auto_size="vertical" alignment="bottom" gap="-2" max_items_per_row_or_column="6">
