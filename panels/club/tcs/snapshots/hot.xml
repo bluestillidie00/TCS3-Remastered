@@ -1,35 +1,31 @@
 <!-- THIS IS THE PANEL THAT SHOWS ON THE KEY STAFF PANEL ON THE CLUB OVERVIEW PANEL -->
-<panel >
+<panel>
     <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 
     <!-- IF WE DO HAVE THE CONTENT -->
     <container>
-        <layout class="horizontal_arrange" horizontal_layout="92,-3,-4" horizontal_gap="16" />
+        <layout class="horizontal_arrange" horizontal_layout="170,-3,-4" horizontal_gap="16" />
 
-        <!-- PLAYER PICTURE -->
-        <widget class="picture" id="picM" scale_picture="true" keep_aspect_ratio="true" width="92" alignment="centre">
-            <attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
-                <list id="value">
-                    <boolean value="false" />
-                </list>
-            </attachment>
-            <record id="object_property">
-                <list id="get_properties">
-                    <record>
-                        <integer id="get_property" value="fcgn" />
-                        <!--Facegen data request-->
-                    </record>
-                    <record>
-                        <integer id="get_property" value="Pfke" />
-                        <!--Fake name request-->
-                    </record>
-                    <record>
-                        <integer id="get_property" value="prpc" />
-                        <integer id="set_property" value="valu" />
-                    </record>
-                </list>
-            </record>
-        </widget> 
+        <!-- CONTAINER HOLDING KIT AND PLAER PIC -->
+        <container width="280" >
+            <attachment_group class="horizontal_arrange" horizontal_gap="-125"/>
+
+            <container width="160">
+                <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+                <widget id="bak1" class="kit_icon" image_alignment="left" width="250" kit_zoom_level="3" priority="1" late_loading="true" >
+                    <record id="object_property" get_property="Pers" set_property="objt"/>
+                </widget>
+            </container>
+
+            <!-- PLAYER FACE -->
+            <container width="180">
+                <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+                <widget class="object_portrait_picture" id="face" width="180" image_alignment="centre_x,bottom" scale_picture="true" keep_aspect_ratio="true" >
+                    <record id="object_property" get_property="objt"/>
+                </widget>
+            </container>
+        </container>
 
         <!-- LEFT SIDE - PLAYER FACE AND PLAYER INFO -->
         <container>
@@ -53,8 +49,8 @@
 
                     <!-- NAME -->
                     <widget class="person_button" style="semi_bold" alignment="left,centre_y" info_popup_enabled="true" person_is_player="true" colour="fg">
-							<record id="object_property" get_property="Pers" set_property="valu" />
-						</widget>
+                        <record id="object_property" get_property="Pers" set_property="valu" />
+                    </widget>
 
                     <!-- NATIONALITY -->
                     <widget class="person_nationality_button" id="natM" colour="faded text" icon_enabled="true" alignment="left,centre_y" icon_alignment="left"  display_format="3">
