@@ -11,16 +11,16 @@
 			<!-- CONTAINER HOLDING KIT AND PLAER PIC -->
 			<container width="300" >
 				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="-60" />
-								
-				<container>
-<layout class="stick_to_sides_attachment" apply_to_children="true" inset="25"/>
 
-				<!-- CLUB LOGO -->
-				<widget class="object_portrait_picture" id="lepi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
-					<record id="object_property" get_property="Cdiv"/>
-				</widget>
-			</container>
-				
+				<container>
+					<layout class="stick_to_sides_attachment" apply_to_children="true" inset="25"/>
+
+					<!-- CLUB LOGO -->
+					<widget class="object_portrait_picture" id="lepi" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+						<record id="object_property" get_property="Cdiv"/>
+					</widget>
+				</container>
+
 				<!-- COMP LOGO -->
 				<widget class="picture" id="pict" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
 					<record id="object_property" get_property="mnpc"/>
@@ -251,41 +251,51 @@
 		</container>
 
 		<!-- KITS -->
-		<container class="tcs_box">
+		<container >
 			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 			<translation id="title" translation_id="" type="use" value="Kits[COMMENT: title for the club kits the club overview panel]" />
 
 			<widget class="club_overview_kits_panel" id="cloK" file="none">
 				<record id="object_property" get_property="objt" set_property="objt"/>
-				<attachment_group class="vertical_arrange" vertical_alignment="top,extend" />
 
-				<container height="18">
-					<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
-					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-					<string id="skin_style" value="title link" />
+				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="8"/>
 
-					<!-- Linked header -->
-					<widget class="text" auto_size="all" font="title">
-						<translation id="text" translation_id="319448" type="use"/>
-					</widget>
+				<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+					<record id="object_property">
+						<integer id="get_property" value="Tidx" />
+						<integer id="set_property" value="indx" />
+					</record>
+				</record>
 
-					<widget class="spacer" height="3" />
-				</container>
-
-				<container>
-					<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="0" vertical_inset="0" />
-
-					<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true">
+				<container class="tcs_box" id="T_hk">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+					<widget class="kit_picture" id="T_hk" kit_id="0"  scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true" >
 						<record id="object_property">
 							<integer id="get_property" value="Tidx" />
 							<integer id="set_property" value="indx" />
 						</record>
-					</record>
+					</widget>
+				</container>
 
-					<widget class="kit_picture" id="T_hk" kit_id="0" />
-					<widget class="kit_picture" id="T_ak" kit_id="1" />
-					<widget class="kit_picture" id="T_tk" kit_id="2" />
+				<container class="tcs_box" id="T_ak">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+					<widget class="kit_picture" id="T_ak" kit_id="1"  scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true" >
+						<record id="object_property">
+							<integer id="get_property" value="Tidx" />
+							<integer id="set_property" value="indx" />
+						</record>
+					</widget>
+				</container>
+
+				<container class="tcs_box" id="T_tk">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+					<widget class="kit_picture" id="T_tk" kit_id="2"  scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" always_use_latest_object_list="true" >
+						<record id="object_property">
+							<integer id="get_property" value="Tidx" />
+							<integer id="set_property" value="indx" />
+						</record>
+					</widget>
 				</container>
 			</widget>
 		</container>
@@ -501,7 +511,7 @@
 								<translation id="title" translation_id="445076" type="use" />
 							</widget>
 						</container>
-						
+
 					</container>		
 				</container>
 			</container>
