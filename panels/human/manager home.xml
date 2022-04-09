@@ -73,7 +73,7 @@
 			
 			<container class="horizontal_adaptive_container" gap="4">
 
-				<container class="tcs_box" default_width="-1" priority="1" minimum_width="350">
+				<container class="tcs_box" default_width="-1" priority="1" minimum_width="400">
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 					<container class="client_object_viewer_selector_panel" id="cos4" file="human/manager home selector panel">
 						<integer id="default_for_club_teams" value="fsws"/>
@@ -88,13 +88,12 @@
 					</container>
 				</container>
 
-				<container class="tcs_box" default_width="-1" priority="2" minimum_width="350">
+				<container class="tcs_box" default_width="-1" priority="2" minimum_width="500">
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 					<container class="client_object_viewer_selector_panel" id="cos7" file="human/manager home selector panel">
 						<integer id="default_for_club_teams" value="tstr"/>
 						<integer id="default_for_international_teams" value="comp"/>
 						<integer id="default_for_international_youth_teams" value="comp"/>
-
 						<integer id="default_for_pre_match" value="ttHp"/>
 						<integer id="default_for_post_match" value="tssu"/>
 					</container>
