@@ -1,5 +1,5 @@
 <panel>
-	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="32" />
+	<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="8" />
 
 	<!-- HEADER -->
 	<container height="18">
