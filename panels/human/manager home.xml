@@ -6,9 +6,9 @@
 		<!-- LEFT -->
 		<container class="vertical_adaptive_container" default_width="-100" minimum_width="420" priority="2" gap="4">
 
-			<record id="default_properties"  default_height="-1" minimum_height="300" />
+			<record id="default_properties"  minimum_height="300" />
 
-			<container class="tcs_box" priority="1">
+			<container class="tcs_box" priority="1" default_height="-1" >
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 				<container file="human/manager home selector panel" class="client_object_viewer_selector_panel" id="cos1" >
@@ -25,7 +25,7 @@
 				</container>
 			</container>
 
-			<container class="tcs_box" priority="2">
+			<container class="tcs_box" priority="2"  default_height="-1">
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 				<container file="human/manager home selector panel" class="client_object_viewer_selector_panel" id="cos2">
@@ -44,7 +44,7 @@
 				</container>
 			</container>
 
-			<container class="tcs_box" priority="3">
+			<container class="tcs_box" priority="3"  default_height="180">
 				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
 				<container file="human/manager home selector panel" class="client_object_viewer_selector_panel" id="cos3">

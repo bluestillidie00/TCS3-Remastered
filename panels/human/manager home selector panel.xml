@@ -9,6 +9,11 @@
 	<widget class="news_feed_panel" id="Pnfd" section="Pnfd" late_loading="true">
 		<translation id="title" translation_id="416370" type="use" />
 	</widget> -->
+	
+	<!-- PLAYER WAGES 
+	<container class="finances_salary_panel" id="tFis" late_loading="true" section="tFis" valid_for_international_teams="false" valid_for_international_youth_teams="false" valid_for_unemployed_manager="false">
+		<translation id="title" translation_id="297198" type="use" />
+	</container> -->
 
 	<!-- LEAGUE TABLE -->	
 	<widget class="team_league_table_panel" id="tlta" late_loading="true" valid_for_international_teams="false" valid_for_international_youth_teams="false" default_for_club_teams="true" valid_for_unemployed_manager="false">

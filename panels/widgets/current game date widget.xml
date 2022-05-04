@@ -11,7 +11,7 @@
       
       <record id="default_properties" auto_size="vertical" colour="secondary" disabled_colour="faded text"/>
 
-      <widget size="10" class="text" id="dtam" font="title" alignment="centre_x,bottom" />
+      <widget size="12" class="text" id="dtam" font="title" alignment="centre_x,bottom" />
       <widget size="8" class="text" id="dytm" alignment="centre_x,top" />
     </container>
   </container>
