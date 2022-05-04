@@ -113,7 +113,7 @@
                     </attachment>
                 </widget>
 
-                <!-- simulate match -->
+                <!-- simulate match  -->
                 <widget class="icon_button" id="INST" appearance="chrome/buttons/continue/button" icon="icons/16px/swap" width="181" height="60" style="bold" alignment="centre" icon_alignment="centre_right, centre_y" font="title" colour="fg" red_replacement="bg negative">
                     <record id="primary_icon_properties" red_replacement="text"/>
                     <translation id="text" translation_id="383109" type="use" value="Simulate Match[COMMENT: button text to go through the next match leaving the result to the staff, using the full match engine to simulate the match result]"/>
@@ -138,7 +138,7 @@
                             <integer value="PacF"/>
                         </list>
                     </attachment>
-                </widget>
+                </widget> 
 
                 <container id="ctnu" file="generic/continue" height="44" width="150">
                     <attachment class="test_global_attachment" get_property="cont" set_property="hidden">
