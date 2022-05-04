@@ -113,7 +113,7 @@
                     
 
                     <!-- calendar button -->
-                    <widget class="current_game_date_widget" id="cgdw" width="120">
+                    <widget class="current_game_date_widget" id="cgdw" width="130">
                         <attachment class="test_global_attachment" get_property="cont" set_property="disa">
                             <list id="value">
                                 <integer value="-5" />
