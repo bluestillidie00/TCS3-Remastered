@@ -228,9 +228,6 @@
 						<widget class="club_finances_description_text" auto_size="vertical" size="10.5">
 							<record id="object_property" get_property="CfiD" />
 						</widget>
-						<widget class="youth_recruitment_status_label" size="9999"  auto_size="vertical" font="title">
-							<record id="object_property" get_property="Crcs"/>
-						</widget>
 
 					</container>
 
@@ -257,7 +254,6 @@
 
 			<widget class="club_overview_kits_panel" id="cloK" file="none">
 				<record id="object_property" get_property="objt" set_property="objt"/>
-
 
 				<attachment_group class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="8"/>
 
@@ -489,30 +485,20 @@
 				</container>
 
 				<!-- BOTTOM SELECTOR -->
-				<container class="team_container_information_overview_panel" id="csio"  file="none">
+				<container class="team_container_information_overview_panel" file="none">
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
 					<record id="object_property" get_property="objt" set_property="objt"/>
 
-					<container class="tcs_box">
+					<container class="tcs_box" gap="8" draw_vertical_dividers="true" priority="1">
 						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						<record id="default_properties" default_width="-1" minimum_width="250"/>
 
-						<!--snapshot selector 2-->
-						<container class="client_object_viewer_selector_panel" id="cos2" minimum_height="300" priority="3" default_height="-3" save_session_state="true">
-							<widget class="club_league_history_graph" id="clhg" file="club/club league history graph no buttons" section="cmps">
-								<translation id="title" translation_id="319446" type="use" />
-							</widget>
-							<widget class="team_container_records_landmarks_panel" id="ldmk">
-								<translation id="title" translation_id="248354" type="use" />
-							</widget>
-							<widget class="team_container_information_background_panel" id="Cbac">
-								<translation id="title" translation_id="333728" type="use" />
-							</widget>
-							<widget class="team_container_honours_panel" id="hons"  default_item="true" file="team/team container honours panel no title">
-								<translation id="title" translation_id="445076" type="use" />
-							</widget>
-						</container>
+						<!--snapshot selector 1-->
+						<container class="client_object_viewer_selector_panel" file="club/club overview selector panel" id="cos1" priority="1" default_widget="upfx"  late_loading="true"/>
 
-					</container>		
+					</container>
+
 				</container>
 			</container>
 
@@ -665,7 +651,7 @@
 
 			<container class="tcs_tabs" id="tsta" default_height="-1" priority="1" default_item="st01" save_default_state="true" save_session_state="true">
 
-				<container id="st01" icon="icons/16px/info">
+				<container id="st01">
 					<translation id="title" translation_id="257300" type="use" value="Overview" />
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
@@ -729,7 +715,7 @@
 				</container>
 			</container> -->
 
-				<container id="st03" icon="icons/16px/formation">
+				<container id="st03" >
 					<translation id="title" translation_id="306490" type="use" value="All Players[COMMENT: match analysis panel; view all players label]" />
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
@@ -744,7 +730,7 @@
 					</container>
 				</container>
 
-				<container id="st04" icon="icons/16px/manager">
+				<container id="st04">
 					<translation id="title" type="use" value="All Staff" />
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
@@ -758,6 +744,37 @@
 						</widget>	
 					</container>
 				</container>
+
+				<container id="st06">
+					<translation id="title" type="use" translation_id="491850" />
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container draw_horizontal_dividers="true" >
+						<!-- MANAGE R PROFILE AND STAFF -->
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<!-- MANAGER INFO -->
+						<widget class="club_vision_overview_panel" id="cVis">
+							<record id="object_property" get_property="objt" set_property="objt"/>
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						</widget>	
+					</container>
+				</container>
+
+				<container id="st05">
+					<translation id="title" type="use" translation_id="284364" />
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container draw_horizontal_dividers="true" >
+						<!-- MANAGE R PROFILE AND STAFF -->
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<!-- MANAGER INFO -->
+						<widget class="team_container_information_facts_panel" id="tcif" >
+							<record id="object_property" get_property="objt" set_property="objt"/>
+						</widget>	
+					</container>
+				</container>		
 
 			</container>
 		</container>
