@@ -9,7 +9,7 @@
     </widget>
 
     <!-- ATTRIBUTE ANALYSER -->
-    <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
+    <widget file="player/tcs/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
         <translation id="title" translation_id="334971" type="use" />
     </widget>
 

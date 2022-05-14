@@ -35,7 +35,8 @@
 				<layout class="horizontal_arrange" horizontal_layout="-6,-12"  />
 
 				<!-- Pitch -->
-				<widget class="pitch_with_player_positions" id="ppip" height="181" vertical="true" pitch_alignment="centre,can_scale" pitch_draw_goals="false" pitch_draw_markings="false" show_position_strength="false" hide_player_positions="true" pitch_show_names="false" pitch_show_names_as_hint="true" pitch_draw_grass="false" pitch_line_colour="text" pitch_touchline_width_percentage="1" pitch_override_icon_size="2" line_width="1.4" appearance="boxes/custom/pitch selection/paper"/>
+				<widget class="pitch_with_player_positions" id="ppip" height="181" vertical="true" pitch_alignment="centre,can_scale" pitch_draw_goals="false" pitch_draw_markings="false" show_position_strength="false" hide_player_positions="true" pitch_show_names="false" pitch_show_names_as_hint="true" pitch_draw_grass="false" pitch_line_colour="text" pitch_touchline_width_percentage="1" pitch_override_icon_size="2" line_width="1.4" appearance="boxes/custom/pitch selection/paper" pitch_base_appearance="tcs" />
+/>
 
 				<container class="vertical_arrange_container" alignment="top,extend" gap="4">
 

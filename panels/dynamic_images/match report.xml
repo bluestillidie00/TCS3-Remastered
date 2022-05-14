@@ -1,0 +1,91 @@
+<panel>
+	<!-- THIS IS THE PANEL THAT SHOWS AFTER A MATCH -->
+	<!-- LAYOUT BELOW ALLOWS US TO OVERLAY WIDGETS OVER THE OTHERS -->
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<!-- SEATS IMAGE ~ SET BEHIND STADIUM IMAGE IN CASE USER IS NOT USING STADIUM PICTURES -->
+	<container id="laye">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+		<container class="client_object_viewer_xml_panel" id="bgim">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+			<record id="object_property" get_property="Ttea" set_property="objt"/>
+			<widget class="picture" id="CoPi" file="photos/dynamic/generic/bg" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+				<record id="object_property" get_property="TsSC" set_property="rrep"/>
+			</widget>
+		</container>
+
+		<!-- Weather shading overlay -->
+		<widget class="value_based_picture" id="weat" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true">
+			<list id="value_list">
+				<record value="0" file="photos/dynamic/blurred stadium/sunny" default_value="true"/>
+				<record value="1" file="photos/dynamic/blurred stadium/sunny" />
+				<record value="2" file="photos/dynamic/blurred stadium/overcast" />
+				<record value="3" file="photos/dynamic/blurred stadium/overcast" />
+				<record value="4" file="photos/dynamic/blurred stadium/rain" />
+				<record value="5" file="photos/dynamic/blurred stadium/night" />
+				<record value="6" file="photos/dynamic/blurred stadium/night rain" />
+			</list>
+			<record id="object_property" get_property="weat" set_property="valu"/>
+		</widget>
+	</container>
+
+	<!-- STADIUM IMAGE -->
+	<container class="client_object_viewer_xml_panel">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="-20" apply_to_children="true"/>
+
+		<!-- PROPERTY CODE USED BELOW SETS THE TEAM -->
+		<record id="object_property" get_property="Ttea" set_property="objt"/>
+
+		<!-- STADIUM PICTURE -->
+		<widget class="stadium_picture" id="STAp" image_alignment="centre_x, centre_y" scale_picture="true" keep_aspect_ratio="false">
+			<!-- NEGATIVE INSET USED TO STRETCH IMAGE SLIGHTLY INCASE OF ASPECT RATIO CHANGES -->
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</widget>
+	</container>
+
+	<!-- OVERLAY ~ SLIGHT OVERLAY USED TO MAKE STADIUM PICTURE SLIGHTLY DARKER.-->
+	<container class="plain_box" appearance="tcs/backgrounds/overlay/70" rrep="bg"/>
+
+	<container>
+		<layout class="arrange_vertical_attachment" layout="-1,-2,-1" offset="0" gap="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="spacer" />
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,-5,-1,-5,-1,-5,-1" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<widget class="spacer" />
+			<!-- Logo/Portrait -->
+			<widget class="object_portrait_picture" id="log1" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+				<!-- PROP_TEAM -->
+				<record id="object_property" get_property="Ttea" set_property="objt"/>
+			</widget>
+			<widget class="spacer" />
+			<widget class="text" id="goal" alignment="centre,auto_fit" style="bold" colour="white" >
+				<colour id="link_colour" red="0" green="0" blue="0" alpha="1"/>
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="text" set_property="text"/>
+					</list>
+				</record>
+			</widget>
+			<widget class="spacer" />
+			<!-- Logo/Portrait -->
+			<widget class="object_portrait_picture" id="log2" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+				<!-- PROP_OTHER_TEAM -->
+				<record id="object_property" get_property="ottm" set_property="objt"/>
+			</widget>
+			<widget class="spacer" />
+		</container>
+
+		<widget class="spacer" />
+
+	</container>
+</panel>

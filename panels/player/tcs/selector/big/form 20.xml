@@ -23,14 +23,16 @@
 		<container id="nofm" hidden="true" navigation_container="true" default_focus="true" navigation_container_allow_empty="true">
 			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
 
+			<record id="default_properties" spec="text" alignment="centre" hidden="true" colour="faded text" />
+
 			<!--explanatory text for no form being available-->
-			<widget class="text" id="nost" spec="text" size="large" alignment="centre" hidden="true">
+			<widget class="text" id="nost" >
 				<translation id="text" translation_id="342459" type="use" value="Player form information is currently unavailable for this player. Add him to a shortlist to track his form.[COMMENT: Player form; Text displayed when form data is not available. Instructs the user on how to generate the data]" />
 			</widget>
-			<widget class="text" id="nodt" spec="text" size="large" alignment="centre" hidden="true">
+			<widget class="text" id="nodt" >
 				<translation id="text" translation_id="342781" type="use" value="This player's form is being tracked by the backroom team but no data is available yet.[COMMENT: Player form; Text displayed when form data is not available but the player is on a shortlist and data will be available in the future]" />
 			</widget>
-			<widget class="text" id="nobt" spec="text" size="large" alignment="centre" hidden="true">
+			<widget class="text" id="nobt" >
 				<translation id="text" translation_id="382400" type="use" value="This player's form is being tracked but no data is available yet.[COMMENT: Player form; Text displayed when form data is not available but the player is on a shortlist and data will be available in the future]" />
 			</widget>
 		</container>

@@ -10,7 +10,7 @@
 	<container id="nsrc" class="main_box">
 		<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="5" />
 
-		<container id="nocs" height="90">
+		<container id="nocs" height="96">
 			<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="5" />
 			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
 

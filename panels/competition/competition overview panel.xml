@@ -171,46 +171,46 @@
 					</record>
 				</container>
 			</container>
-		
-		<!-- MEDIA DREAM ELEVEN  -->
-		<container id="SePr">
-		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
-								<translation id="title" translation_id="344751" type="use" />
-		
-							<widget file="none" class="competition_preview_panel" id="tCSR" late_loading="true">
-								<record id="object_property" get_property="objt" set_property="objt"/>
-<layout class="horizontal_arrange" horizontal_layout="-1,-2"  />								
 
-		<!-- Odds Table -->
-		<container class="tcs_box" navigation_container="true">
-<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			<!-- MEDIA DREAM ELEVEN  -->
+			<container id="SePr">
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+				<translation id="title" translation_id="344751" type="use" />
 
-			<widget class="media_predicition_league_table_panel" file="competition/media prediction league table preview">
-				<record id="object_property">
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="objt" />
-				</record>
-			</widget>
-		</container>
+				<widget file="none" class="competition_preview_panel" id="tCSR" late_loading="true">
+					<record id="object_property" get_property="objt" set_property="objt"/>
+					<layout class="horizontal_arrange" horizontal_layout="-1,-2"  />								
 
-	<container>
-		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+					<!-- Odds Table -->
+					<container class="tcs_box" navigation_container="true">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
-		<container id="cmOv">
-				<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
-				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
-                
-				<container class="horizontal_adaptive_container" id="ADAP" offset="0" inset="0" gap="0">
-					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						<widget class="media_predicition_league_table_panel" file="competition/media prediction league table preview">
+							<record id="object_property">
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="objt" />
+							</record>
+						</widget>
+					</container>
 
-					<container class="tcs_box" red_replacement="pitch_box_background" default_width="-1" priority="1">
-<layout class="vertical_arrange" vertical_layout="-1,320" />
+					<container>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
-						<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" colour="white" alignment="centre">
-							<translation id="title" translation_id="420579" type="use" value="Media Dream Eleven[COMMENT: competition preview panel, label for a proposed media best eleven ahead of the competition starting]" />
-							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+						<container id="cmOv">
+							<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
-							<widget class="pitch_with_tactics" id="mdPt"
+							<container class="horizontal_adaptive_container" id="ADAP" offset="0" inset="0" gap="0">
+								<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+								<container class="tcs_box" red_replacement="pitch_box_background" default_width="-1" priority="1">
+									<layout class="vertical_arrange" vertical_layout="-1,320" />
+
+									<container class="inner_subtle_box" appearance="boxes/titled/compact/paper" colour="white" alignment="centre">
+										<translation id="title" translation_id="420579" type="use" value="Media Dream Eleven[COMMENT: competition preview panel, label for a proposed media best eleven ahead of the competition starting]" />
+										<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+										<widget class="pitch_with_tactics" id="mdPt"
 	                    select_event="slic"
 	                    icon_flags="show_selection_image,dont_allow_player_links,show_name,drop_initial_if_possible,dont_show_status_icons,show_team_name_hint"
 	                    pitch_additional_touchline_pixels_left=".5"
@@ -222,146 +222,146 @@
 	                    allow_y_score_adjustment_for_roles="false"
 	                    player_icon_file="tactics/tactics info panel team report" />
 
-						</container>
-						
-						
-						<container class="inner_subtle_box" width="200" colour="white" alignment="centre" red_replacement="black">
-							<translation id="title" translation_id="420578" type="use" value="Highlighted Star Player[COMMENT: competition season preview panel, focus panel on a star player from any given team]" />
-							<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="10" />
-							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+									</container>
 
-							<container class="client_object_viewer_xml_panel" id="plIn" file="none" >
-							
-	<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="1"  />
-	<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="1"/>
-	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
-	<widget class="object_portrait_picture" id="plpc" image_alignment="centre" scale_picture="true" height="100">
-		<record id="object_property">
-			<list id="get_properties">
-				<record>
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="valu" />
-				</record>
-			</list>
-		</record>
-	</widget>
+									<container class="inner_subtle_box" width="200" colour="white" alignment="centre" red_replacement="black">
+										<translation id="title" translation_id="420578" type="use" value="Highlighted Star Player[COMMENT: competition season preview panel, focus panel on a star player from any given team]" />
+										<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="10" />
+										<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
-	
-	<widget class="person_button" id="psbs" auto_size="vertical" alignment="centre" style="bold" size="large" colour="white">
-		<record id="object_property">
-			<list id="get_properties">
-				<record>
-					<integer id="get_property" value="objt" />
-					<integer id="set_property" value="valu" />
-				</record>
-			</list>
-		</record>
-	</widget>
-	<container>
-		<layout class="arrange_horizontal_attachment" offset="0" gap="2" alignment="middle" />
-		<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="2"/>
-		<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+										<container class="client_object_viewer_xml_panel" id="plIn" file="none" >
 
-		<widget class="age_label" auto_size="all" colour="white">
-			<record id="object_property">
-				<list id="get_properties">
-					<record>
-						<integer id="get_property" value="PSag" />
-						<integer id="set_property" value="valu" />
-					</record>
-				</list>
-			</record>
-		</widget>
+											<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="1"  />
+											<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="1"/>
+											<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
-		<widget class="text" auto_size="all" alignment="left,centre_y" colour="white">
-			<translation id="text" translation_id="420757" type="use" value="year-old[COMMENT: appended next to or underneath a player's age displayed solely as a numeric, part of a UI panel, translate accordingly]" />
-		</widget>
-	</container>
+											<widget class="object_portrait_picture" id="plpc" image_alignment="centre" scale_picture="true" height="100">
+												<record id="object_property">
+													<list id="get_properties">
+														<record>
+															<integer id="get_property" value="objt" />
+															<integer id="set_property" value="valu" />
+														</record>
+													</list>
+												</record>
+											</widget>
 
-	<widget class="player_description_text" auto_size="vertical" alignment="centre" colour="white">
-		<record id="object_property" get_property="Pdes" />
-	</widget>
 
-	<widget class="club_button" auto_size="vertical" alignment="centre" icon_alignment="centre" colour="white">
-		<record id="object_property" get_property="Pclb" />
-	</widget>
+											<widget class="person_button" id="psbs" auto_size="vertical" alignment="centre" style="bold" size="large" colour="white">
+												<record id="object_property">
+													<list id="get_properties">
+														<record>
+															<integer id="get_property" value="objt" />
+															<integer id="set_property" value="valu" />
+														</record>
+													</list>
+												</record>
+											</widget>
+											<container>
+												<layout class="arrange_horizontal_attachment" offset="0" gap="2" alignment="middle" />
+												<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="2"/>
+												<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
 
-	<!--<container height="6" />-->
+												<widget class="age_label" auto_size="all" colour="white">
+													<record id="object_property">
+														<list id="get_properties">
+															<record>
+																<integer id="get_property" value="PSag" />
+																<integer id="set_property" value="valu" />
+															</record>
+														</list>
+													</record>
+												</widget>
 
-	<widget class="nation_button" id="natb" auto_size="vertical" alignment="centre" icon_alignment="centre" format="[%nation#1-nationality]" colour="white">
-		<record id="object_property">
-			<list id="get_properties">
-				<record>
-					<integer id="get_property" value="Pnat" />
-					<integer id="set_property" value="valu" />
-				</record>
-			</list>
-		</record>
-	</widget>
-							
-							
+												<widget class="text" auto_size="all" alignment="left,centre_y" colour="white">
+													<translation id="text" translation_id="420757" type="use" value="year-old[COMMENT: appended next to or underneath a player's age displayed solely as a numeric, part of a UI panel, translate accordingly]" />
+												</widget>
+											</container>
+
+											<widget class="player_description_text" auto_size="vertical" alignment="centre" colour="white">
+												<record id="object_property" get_property="Pdes" />
+											</widget>
+
+											<widget class="club_button" auto_size="vertical" alignment="centre" icon_alignment="centre" colour="white">
+												<record id="object_property" get_property="Pclb" />
+											</widget>
+
+											<!--<container height="6" />-->
+
+											<widget class="nation_button" id="natb" auto_size="vertical" alignment="centre" icon_alignment="centre" format="[%nation#1-nationality]" colour="white">
+												<record id="object_property">
+													<list id="get_properties">
+														<record>
+															<integer id="get_property" value="Pnat" />
+															<integer id="set_property" value="valu" />
+														</record>
+													</list>
+												</record>
+											</widget>
+
+
+										</container>
+
+										<widget class="horizontal_divider" />
+
+										<container class="client_object_viewer_xml_panel" id="plVl">
+											<layout class="fit_children_attachment" alignment="vertical" offset="0" />
+											<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
+
+											<widget class="transfer_value_label" auto_size="vertical" style="semi_bold" size="large" alignment="centre" colour="white">
+												<translation id="format" translation_id="383826" type="use" value="Valued at [%cash#1-roundsmall-short][COMMENT: FR 10661; player overview; string diaplyed a player's estimated monetary value]" />
+												<record id="object_property" get_property="Pdva" dont_set_hint="true" />
+											</widget>
+										</container>
+
+									</container>
+
+								</container>
+
+								<container class="tcs_box" default_width="-1" priority="2">
+									<translation id="title" translation_id="308470" type="use" value="Key Players[COMMENT: title for a box which will display the key players for a match for each team]" />
+									<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+									<!-- Key players -->
+									<container class="client_object_viewer_xml_panel" file="none">
+										<record id="object_property" get_property="objt" set_property="objt"/>
+										<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+										<widget class="client_object_list_table" mode="fill_rows, stripe_rows,show_bullets, select_rows, drop_on_rows" database_table_type="1" column_spacing="10" should_force_refresh="true">
+											<record id="object_property">
+												<integer id="get_property" value="Cptw"/>
+												<integer id="set_property" value="objL"/>
+											</record>
+
+											<list id="column_widget_properties">
+												<record index="1" navigation_focus_target="true"/>
+											</list>
+
+											<record id="viewed_property_ids">
+												<!-- Name -->
+												<record id="Pnms" auto_hide_priority="1" multiline="false" width="-1" />
+												<!-- Team -->
+												<record id="Pcte" auto_hide_priority="2" multiline="false" width="-1" />
+												<!-- Nation -->
+												<record id="Pnat" auto_hide_priority="3" multiline="false" width="100" />
+												<!-- Position -->
+												<record id="PpsC" auto_hide_priority="3" multiline="false" width="100" />
+												<!-- Value -->
+												<record id="Pdva" auto_hide_priority="3" multiline="false" width="100" />
+											</record>
+										</widget>
+									</container>
+								</container>
 							</container>
 
-							<widget class="horizontal_divider" />
-
-							<container class="client_object_viewer_xml_panel" id="plVl">
-								<layout class="fit_children_attachment" alignment="vertical" offset="0" />
-								<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" />
-
-								<widget class="transfer_value_label" auto_size="vertical" style="semi_bold" size="large" alignment="centre" colour="white">
-									<translation id="format" translation_id="383826" type="use" value="Valued at [%cash#1-roundsmall-short][COMMENT: FR 10661; player overview; string diaplyed a player's estimated monetary value]" />
-									<record id="object_property" get_property="Pdva" dont_set_hint="true" />
-								</widget>
-							</container>
-
 						</container>
-						
+
+						<container class="competition_team_preview_panel" id="tsVw" hidden="true" />
 					</container>
+				</widget>
+			</container> 
 
-					<container class="tcs_box" default_width="-1" priority="2">
-						<translation id="title" translation_id="308470" type="use" value="Key Players[COMMENT: title for a box which will display the key players for a match for each team]" />
-						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-						<!-- Key players -->
-						<container class="client_object_viewer_xml_panel" file="none">
-						<record id="object_property" get_property="objt" set_property="objt"/>
-						  <layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
-  <widget class="client_object_list_table" mode="fill_rows, stripe_rows,show_bullets, select_rows, drop_on_rows" database_table_type="1" column_spacing="10" should_force_refresh="true">
-    <record id="object_property">
-      <integer id="get_property" value="Cptw"/>
-      <integer id="set_property" value="objL"/>
-    </record>
-
-	  <list id="column_widget_properties">
-		  <record index="1" navigation_focus_target="true"/>
-	  </list>
-
-    <record id="viewed_property_ids">
-      <!-- Name -->
-      <record id="Pnms" auto_hide_priority="1" multiline="false" width="-1" />
-      <!-- Team -->
-      <record id="Pcte" auto_hide_priority="2" multiline="false" width="-1" />
-      <!-- Nation -->
-      <record id="Pnat" auto_hide_priority="3" multiline="false" width="100" />
-      <!-- Position -->
-      <record id="PpsC" auto_hide_priority="3" multiline="false" width="100" />
-      <!-- Value -->
-      <record id="Pdva" auto_hide_priority="3" multiline="false" width="100" />
-    </record>
-  </widget>
-						</container>
-					</container>
-			</container>
-
-		</container>
-
-		<container class="competition_team_preview_panel" id="tsVw" hidden="true" />
-	</container>
-							</widget>
-		</container> 
-		
-		
 		</container>
 	</container>
 </panel>

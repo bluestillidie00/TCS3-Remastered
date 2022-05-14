@@ -744,23 +744,7 @@
 						</widget>	
 					</container>
 				</container>
-
-				<container id="st06">
-					<translation id="title" type="use" translation_id="491850" />
-					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
-
-					<container draw_horizontal_dividers="true" >
-						<!-- MANAGE R PROFILE AND STAFF -->
-						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
-
-						<!-- MANAGER INFO -->
-						<widget class="club_vision_overview_panel" id="cVis">
-							<record id="object_property" get_property="objt" set_property="objt"/>
-							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
-						</widget>	
-					</container>
-				</container>
-
+								
 				<container id="st05">
 					<translation id="title" type="use" translation_id="284364" />
 					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
@@ -773,6 +757,44 @@
 						<widget class="team_container_information_facts_panel" id="tcif" >
 							<record id="object_property" get_property="objt" set_property="objt"/>
 						</widget>	
+					</container>
+				</container>		
+
+				<!-- CLUB VISION 
+				<container id="st06">
+					<translation id="title" type="use" translation_id="491850" />
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container draw_horizontal_dividers="true" >
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+						<widget class="club_vision_overview_panel" id="cVis">
+							<record id="object_property" get_property="objt" set_property="objt"/>
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						</widget>	
+					</container>
+				</container> -->
+				
+				<container id="st07">
+					<translation id="title" type="use" translation_id="247694" />
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<container draw_horizontal_dividers="true" >
+						<!-- MANAGE R PROFILE AND STAFF -->
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+					<!--footer-->
+    <container class="team_container_information_overview_panel" file="none">
+        <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+        <record id="object_property" get_property="objt" set_property="objt"/>
+		
+		            <container class="client_object_viewer_selector_panel" file="club/player stats" id="cos1" priority="1" default_widget="upfx"/>
+					</container>
+
+
+
+
+
 					</container>
 				</container>		
 

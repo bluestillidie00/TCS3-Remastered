@@ -74,4 +74,9 @@
 	<container class="player_scout_reports_panel" id="thPC" file="player/tcs/selector/header/tcs pros cons">
 		<translation id="title" type="use" value="TCS Pros and Cons" />
 	</container> 
+
+	<!-- PROS AND CONS -->
+	<container class="player_transfer_information_panel" id="thTr" file="player/tcs/selector/header/transfer">
+		<translation id="title" type="use" translation_id="298527" />
+	</container> 
 </panel>
